@@ -22,24 +22,8 @@ Takes 1 argument for processing - **queryResult** which is the query result from
 It takes 2 arguments for processing - **history** which is the history expense of a user, and **budget_data** is the budget setting of a user. It collects the budget setting and calculates the remaining budget so far.
 
 # How to run this feature?
-Sri Athithya Kruth, [20.10.21 20:33]
-/display
 
-mydollarbot20102021, [20.10.21 20:33]
-[In reply to Sri Athithya Kruth]
-Please select a category to see the total expense
 
-Sri Athithya Kruth, [20.10.21 20:33]
-Day
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/bff282f6-6e72-412e-828d-db5f4e83da14
 
-mydollarbot20102021, [20.10.21 20:33]
-Hold on! Calculating...
 
-mydollarbot20102021, [20.10.21 20:33]
-
-Here are your total spendings day:
-
-CATEGORIES,AMOUNT 
-----------------------
-Transport $1022.0
-Groceries $12.0
