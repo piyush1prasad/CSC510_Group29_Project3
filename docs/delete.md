@@ -16,10 +16,7 @@ It takes 1 argument for processing - **chat_id** which is the chat_id of the use
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /add into the telegram bot.
 
-Below you can see an example in text format:
 
-Sri Athithya Kruth, [19.10.21 21:50]
-/delete
 
-dollarbot,[]
-History has been deleted!
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/9109339a-1077-4bb6-bc5f-c45cda2b66cb
+
