@@ -13,3 +13,7 @@ This is the main function used to implement the budget delete feature. It takes 
 
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /budget into the telegram bot. Add a budget and then type /budget again. Please choose the option for deleting a budget.
+
+
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/34a5b111-5646-414e-8abb-0ac3203899a3
+
