@@ -46,3 +46,7 @@ Otherwise, it exits the feature.
 
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /budget into the telegram bot. Please follow the prompts on the screen to create a new budget.
+
+
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/f480139b-d221-4f62-833e-f69144937c28
+
