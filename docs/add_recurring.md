@@ -35,28 +35,7 @@ This is the main function used to implement the add feature. It pop ups a menu o
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /add_recurring into the telegram bot.
 
-Below you can see an example in text format:
 
-dollarbot, [28.11.21 16:48]
-[In reply to Prithvish Doshi]
-Select Category
 
-Prithvish Doshi, [28.11.21 16:48]
-Food
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/b496c300-87eb-46d8-a2f2-39bfe4ede086
 
-dollarbot, [28.11.21 16:48]
-How much did you spend on Food? 
-(Enter numeric values only)
-
-Prithvish Doshi, [28.11.21 16:48]
-15
-
-dollarbot, [28.11.21 16:48]
-For how many months in the future will the expense be there?
-(Enter integer values only)
-
-Prithvish Doshi, [28.11.21 16:48]
-6
-
-dollarbot, [28.11.21 16:48]
-The following expenditure has been recorded: You have spent $15.0 for Food for the next 6 months
