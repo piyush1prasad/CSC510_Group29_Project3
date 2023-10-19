@@ -32,21 +32,4 @@ This is the main function used to implement the add feature. It pop ups a menu o
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /add into the telegram bot.
 
-Below you can see an example in text format:
-
-dollarbot, [19.10.21 21:14]
-[In reply to Sri Athithya Kruth]
-Select Category
-
-Sri Athithya Kruth, [19.10.21 21:14]
-Food
-
-dollarbot, [19.10.21 21:14]
-How much did you spend on Food? 
-(Enter numeric values only)
-
-Sri Athithya Kruth, [19.10.21 21:14]
-1212
-
-dollarbot, [19.10.21 21:14]
-The following expenditure has been recorded: You have spent $1212.0 for Food on 19-Oct-2021 21:14
+![income (1)](https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/d5d47a33-9315-473d-b7e6-0dcdd5c04a82)
