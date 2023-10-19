@@ -32,4 +32,4 @@ This is the main function used to implement the add feature. It pop ups a menu o
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /add into the telegram bot.
 
-![income (1)](https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/d5d47a33-9315-473d-b7e6-0dcdd5c04a82)
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/c39d0ab0-8801-41fa-bdb1-959e86635cfc
