@@ -1,4 +1,4 @@
-# About MyDollarBot's /estimate_summary Feature
+# About MyDollarBot's estimate_summary.py file
 It reads user spending data from a JSON file and calculates estimations of spendings for a specified day or 
 month. It handles errors, provides clear responses, and tracks data availability for daily average spending. 
 Overall, it enhances the chatbot's functionality by allowing users to estimate spending.
