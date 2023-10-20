@@ -1,4 +1,3 @@
-
 |Notes|Score|evidence|
 |-----|--|---------|
 |Video|3|Evidence in [Video](https://www.youtube.com/watch?v=oKYiTNTCPbo)|
@@ -36,5 +35,11 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Do you publish case studies to show how your software has been used by yourself and others?|Yes| [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
 |Is the name of your project/software unique?|Yes| |
 |Is your project/software name free from trademark violations?| Yes||
-|Is your software available as a package that can be deployed without building it?| Yes | |
-|Is your software available for free?|Yes||
+|Is your software available as a package that can be deployed without building it?| Yes |[Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md#installation-guide)|
+|Is your software available for free?|Yes|[Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md#installation-guide)|
+|Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository?|Yes|[Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main)|
+|Is your software hosted in an established, third-party repository likeGitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)?|Yes|[Github](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main)|
+|Is your documentation clearly available on your website or within your software?|Yes|[Documentation](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use?|Yes| [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software?|Yes| |
+|Do you provide a comprehensive guide to all your software’s commands, functions and options?|Yes|[Documentation](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
