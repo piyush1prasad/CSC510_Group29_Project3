@@ -43,11 +43,11 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use?|Yes| [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md)|
 |If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software?|Yes| |
 |Do you provide a comprehensive guide to all your software’s commands, functions and options?|Yes|[Documentation](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
-|Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?|Yes||
+|Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
 |If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?|
 |Do you store your documentation under revision control with your source code?| Yes | [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/code)|
 |Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?| Yes| [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md#whats-new-from-phase-3-to-phase-4) |
-|Does your software describe how a user can get help with using your software?|Yes |
-|Does your website and documentation describe what support, if any, you provide to users and developers?|
-|Does your project have an e-mail address or forum that is solely for supporting users?|
-|Are e-mails to your support e-mail address received by more than one person?|
+|Does your software describe how a user can get help with using your software?|Yes |Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
+|Does your website and documentation describe what support, if any, you provide to users and developers?|Yes| Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
+|Does your project have an e-mail address or forum that is solely for supporting users?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
+|Are e-mails to your support e-mail address received by more than one person?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
