@@ -5,8 +5,8 @@
 but nevertheless, here is a track record that everyone is contributing a lot)|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/graphs/contributors)|
 |Number of commits|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/pulse)|
 |Number of commits: by different people|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/pulse)|
-|Issues reports: there are **many**|
-|Issues are being closed|evidence in GH|
+|Issues reports: there are **many**|3| There are 17 issues in total. [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
+|Issues are being closed|3|[Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/issues?q=is%3Aissue+is%3Aclosed)|
 |DOI badge: exists|3|Eveidence in [README.md](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
 |Docs: doco generated, format not ugly |3| Evidence in [documentation](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/code/documentation)|
 |Docs: what: point descriptions of each class/function (in isolation)|3|Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
