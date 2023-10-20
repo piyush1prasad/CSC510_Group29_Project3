@@ -31,3 +31,10 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|
 |Evidence that the members of the team are working across multiple places in the code base|3|Worked across development of new features and testing them, alongwith enhancement of few older features 
 |Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|3|
+|Does your website and documentation provide a clear, high-level overview of your software?| Yes | [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
+|Does your website and documentation clearly describe the type of user who should use your software?| Yes | [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|Do you publish case studies to show how your software has been used by yourself and others?|Yes| [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|Is the name of your project/software unique?|Yes| |
+|Is your project/software name free from trademark violations?| Yes||
+|Is your software available as a package that can be deployed without building it?| Yes | |
+|Is your software available for free?|Yes||
