@@ -120,6 +120,9 @@ coverage report
 2. While running the test cases if an error arrises then run pytest command to run the testcases.
 In case of any extended support or quieries please reach us at seproject46@gmail.com
 
+## Scorecard:
+[Project2_Rubric](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/docs/project2rubric.md)
+
 ## Notes:
 You can download and install the Telegram desktop application for your system from the following site: https://desktop.telegram.org/
 
