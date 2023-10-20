@@ -4,7 +4,7 @@ Both Ascending and Descending Orders of user's spendings are displayed in the
 spending_history_beautified.pdf
 
 # Location of Code for this Feature
-The code that implements this feature can be found [here]https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/display_Asc.py
+The code that implements this feature can be found [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/display_Asc.py)
 
 # Code Description
 ## Functions
