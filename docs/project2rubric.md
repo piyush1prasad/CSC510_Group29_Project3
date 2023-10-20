@@ -26,8 +26,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
 |Chat channel: exists|3|[Whatsapp](https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/659beadd-d210-4fd6-9658-84f6d42d9707)|
 |Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files|
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files|3| Entire project is developed in Python, and is being run using shell script
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|
-|Evidence that the members of the team are working across multiple places in the code base|
-|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|
+|Evidence that the members of the team are working across multiple places in the code base|3|Worked across development of new features and testing them, alongwith enhancement of few older features 
+|Short release cycles | (hard to see in short projects) project members are committing often enough so that everyone can get your work|3|
