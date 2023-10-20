@@ -1,3 +1,4 @@
+#Copyright (c) 2021 Dev Kumar
 import helper
 
 # Define a function to delete the expense history
