@@ -1,3 +1,4 @@
+#Copyright (c) 2021 Dev Kumar
 from math import remainder
 from fpdf import FPDF
 from PIL import Image
