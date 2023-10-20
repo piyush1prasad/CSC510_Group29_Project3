@@ -7,7 +7,7 @@ illustrate expense categories and amounts, with the option to include budget lin
 The resulting charts are saved as image files.
 
 # Location of Code for this Feature
-The code that implements this feature can be found [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/graphing_for_day.py)
+The code that implements this feature can be found [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/graphing_for_month.py)
 
 # Code Description
 ## Functions
