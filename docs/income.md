@@ -20,6 +20,7 @@ It takes 2 arguments for processing - **message** which is the message from the 
 Once the project is running(please follow the instructions given in the main README.md for this), please type /budget into the telegram bot.
 
 
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/ee26fdc8-2e80-4bdb-a106-23d2e37bb74b
 
-https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/a602029c-1466-4e70-b8d4-8454f80bc422
+
 
