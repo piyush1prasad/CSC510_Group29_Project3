@@ -51,3 +51,12 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Does your website and documentation describe what support, if any, you provide to users and developers?|Yes| Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
 |Does your project have an e-mail address or forum that is solely for supporting users?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
 |Are e-mails to your support e-mail address received by more than one person?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
+|Does your project have a ticketing system to manage bug reports and feature requests?| Yes | [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/issues)|
+|Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?|Yes| [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/issues)|
+|Is your software’s architecture and design modular?|Yes| [Github](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main)|
+|Does your software use an accepted coding standard or convention?|Yes||
+|Does your software allow data to be imported and exported using open data formats?|Yes|
+|Does your software allow communications using open communications protocols?|
+|Is your software cross-platform compatible?|Yes||
+|Does your software adhere to appropriate accessibility conventions or standards?|Yes||
+|Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
