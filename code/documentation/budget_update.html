@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>budget_update API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>budget_update</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import helper # Import the helper module for utility functions
+import logging # Import the logging module for error handling
+from telebot import types  # Import the &#39;types&#39; module from the &#39;telebot&#39; library
+
+
+# Define a function to update the overall or category budget
+def run(message, bot):
+    chat_id = message.chat.id # Get the chat ID from the message
+    
+    # Check if an overall budget is available for the user
+    if helper.isOverallBudgetAvailable(chat_id):
+        update_overall_budget(chat_id, bot)
+    
+    # Check if a category budget is available for the user
+    elif helper.isCategoryBudgetAvailable(chat_id):
+        update_category_budget(message, bot)
+    else:
+        # If no budget is available, prompt the user to select a budget type
+        markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+        options = helper.getBudgetTypes()
+        markup.row_width = 2
+        for c in options.values():
+            markup.add(c)
+        msg = bot.reply_to(message, &#39;Select Budget Type or Select Cancel to cancel the operation&#39;, reply_markup=markup)
+        bot.register_next_step_handler(msg, post_type_selection, bot)
+
+# Function to handle the user&#39;s budget type selection
+def post_type_selection(message, bot):
+    try:
+        chat_id = message.chat.id
+        op = message.text
+        options = helper.getBudgetTypes()
+
+        # Check if the selected option is valid
+        if op not in options.values():
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this operation \&#34;{}\&#34;!&#34;.format(op))
+            
+        if op == options[&#39;overall&#39;]:
+            update_overall_budget(chat_id, bot)
+        elif op == options[&#39;category&#39;]:
+            update_category_budget(message, bot)
+        elif op == options[&#39;cancel&#39;]:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+        else :
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this operation \&#34;{}\&#34;!&#34;.format(op))
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)
+
+# Function to update the overall budget
+def update_overall_budget(chat_id, bot):
+    if (helper.isOverallBudgetAvailable(chat_id)):
+        currentBudget = helper.getOverallBudget(chat_id)
+        msg_string = &#39;Current Budget is ${}\n\nEnter your new monthly budget (Enter numeric values only) or Enter Cancel to cancel the operation \n&#39;
+        message = bot.send_message(chat_id, msg_string.format(currentBudget))
+    else:
+        message = bot.send_message(chat_id, &#39;Enter your monthly budget (Enter numeric values only)or Enter Cancel to cancel the operation \n&#39;)
+    bot.register_next_step_handler(message, post_overall_amount_input, bot)
+
+
+# Function to handle the user&#39;s input for the overall budget amount
+def post_overall_amount_input(message, bot):
+    try:
+        chat_id = message.chat.id
+
+        if message.text != &#34;Cancel&#34;:
+            amount_value = helper.validate_entered_amount(message.text)
+            total_income = helper.getTotalIncome(chat_id)
+
+            if total_income is not None and float(amount_value) &gt; float(total_income):
+                budget_deficit = float(amount_value) - float(total_income)
+                alert_message = f&#34;⚠️\uFE0F Your budget exceeds your total income by ${budget_deficit:.2f} &#34; + &#34;\n(Do you want to update your budget)&#34;
+    
+                # Define markup here before using it
+                markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+                options = helper.getYesNoOptions().values()
+                markup.row_width = 2
+                for c in options:
+                    markup.add(c)
+                
+                bot.send_message(chat_id, alert_message, reply_markup=markup)
+                msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+                bot.register_next_step_handler(msg, post__selection, bot, amount_value)
+        
+            else :
+                update_overall_budget_amount(message, amount_value, bot)
+
+        else:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)
+
+# Function to handle the user&#39;s yes/no selection after budget alert
+def post__selection(message, bot, amount_val ) :
+    chat_id = message.chat.id
+    selected_option = message.text
+    options = helper.getYesNoOptions()
+    if selected_option == options[&#39;yes&#39;]:
+        update_overall_budget_amount(message, amount_val, bot)
+    else :
+        update_overall_budget(chat_id, bot)
+
+# Function to update the overall budget amount
+def update_overall_budget_amount(message, amount_value, bot) :
+    chat_id = message.chat.id
+    if amount_value == 0:
+        raise Exception(&#34;Invalid amount.&#34;)
+    user_list = helper.read_json()
+    if str(chat_id) not in user_list:
+            user_list[str(chat_id)] = helper.createNewUserRecord()
+    user_list[str(chat_id)][&#39;budget&#39;][&#39;overall&#39;] = amount_value
+    helper.write_json(user_list)
+    bot.send_message(chat_id, &#39;Budget Updated!&#39;)
+
+# Function to update the category budget
+def update_category_budget(message, bot):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    categories = helper.getSpendCategories()
+    markup.row_width = 2
+    for c in categories:
+        markup.add(c)
+    msg = bot.reply_to(message, &#39;Select Category or Select Cancel to cancel the operation&#39;, reply_markup=markup)
+    bot.register_next_step_handler(msg, post_category_selection, bot)
+
+
+# Function to handle the user&#39;s category selection
+def post_category_selection(message, bot):
+    try:
+        chat_id = message.chat.id
+        selected_category = message.text
+        categories = helper.getSpendCategories()
+        if selected_category not in categories:
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this category \&#34;{}\&#34;!&#34;.format(selected_category))
+        if selected_category != &#34;Cancel&#34;:
+            if helper.isCategoryBudgetByCategoryAvailable(chat_id, selected_category):
+                currentBudget = helper.getCategoryBudgetByCategory(chat_id, selected_category)
+                msg_string = &#39;Current monthly budget for {} is {}\n\nEnter your new monthly budget for {} (Enter numeric values only) or Enter Cancel to cancel the operation\n&#39;
+                message = bot.send_message(chat_id, msg_string.format(selected_category, currentBudget, selected_category))
+            else:
+                message = bot.send_message(chat_id, &#39;Enter monthly budget for &#39; + selected_category + &#39;(Enter numeric values only) or Enter Cancel to cancel the operation\n&#39;)
+            bot.register_next_step_handler(message, post_category_amount_input, bot, selected_category)
+        else:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)
+
+
+def post_category_amount_input(message, bot, category):
+    try:
+        chat_id = message.chat.id
+        if message.text != &#39;Cancel&#39;:
+            amount_value = helper.validate_entered_amount(message.text)
+            data = helper.getCategoryBudget(chat_id)
+            categ_sum = 0.0
+            if data is not None and category in data :
+                categ_sum = float(data[category]) 
+            
+            category_total = sum(float(value) for value in data.values()) if data is not None else 0.0
+            total_sum = category_total + float(amount_value) - categ_sum
+            total_income = float(helper.getTotalIncome(chat_id))
+
+            if total_income is not None and total_sum &gt; total_income:
+                budget_deficit = total_sum - total_income
+                alert_message = f&#34;⚠️\uFE0F Your total budget exceeds your total income by ${budget_deficit:.2f} &#34; + &#34;\n(Do you want to update your budget)&#34;
+    
+                # Define markup here before using it
+                markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+                options = helper.getYesNoOptions().values()
+                markup.row_width = 2
+                for c in options:
+                    markup.add(c)
+                
+                bot.send_message(chat_id, alert_message, reply_markup=markup)
+                msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+                bot.register_next_step_handler(msg, post_yesno_selection, bot, amount_value, category)
+            else :
+                update_category_budget_amount(chat_id, bot, amount_value, category)
+      
+        else :
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)
+
+
+def post_yesno_selection(message, bot, amount_val, category ) :
+    chat_id = message.chat.id
+    selected_option = message.text
+    options = helper.getYesNoOptions()
+    if selected_option == options[&#39;yes&#39;]:
+        update_category_budget_amount( chat_id, bot, amount_val, category)
+    else :
+        update_category_budget(message, bot)
+
+
+def update_category_budget_amount(chat_id, bot, amount_val, category) :
+    if amount_val == 0:
+            raise Exception(&#34;Invalid amount.&#34;)
+    user_list = helper.read_json()
+    if str(chat_id) not in user_list:
+        user_list[str(chat_id)] = helper.createNewUserRecord()
+    if user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;] is None:
+        user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;] = {}
+    user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;][category] = amount_val
+    helper.write_json(user_list)
+    message = bot.send_message(chat_id, &#39;Budget for &#39; + category + &#39; Created!&#39;)
+    post_category_add(message, bot)
+
+
+def post_category_add(message, bot):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    options = helper.getUpdateOptions().values()
+    markup.row_width = 2
+    for c in options:
+        markup.add(c)
+    msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+    bot.register_next_step_handler(msg, post_option_selection, bot)
+
+
+def post_option_selection(message, bot):
+    selected_option = message.text
+    options = helper.getUpdateOptions()
+    if selected_option == options[&#39;continue&#39;]:
+        update_category_budget(message, bot)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="budget_update.post__selection"><code class="name flex">
+<span>def <span class="ident">post__selection</span></span>(<span>message, bot, amount_val)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post__selection(message, bot, amount_val ) :
+    chat_id = message.chat.id
+    selected_option = message.text
+    options = helper.getYesNoOptions()
+    if selected_option == options[&#39;yes&#39;]:
+        update_overall_budget_amount(message, amount_val, bot)
+    else :
+        update_overall_budget(chat_id, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_category_add"><code class="name flex">
+<span>def <span class="ident">post_category_add</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_category_add(message, bot):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    options = helper.getUpdateOptions().values()
+    markup.row_width = 2
+    for c in options:
+        markup.add(c)
+    msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+    bot.register_next_step_handler(msg, post_option_selection, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_category_amount_input"><code class="name flex">
+<span>def <span class="ident">post_category_amount_input</span></span>(<span>message, bot, category)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_category_amount_input(message, bot, category):
+    try:
+        chat_id = message.chat.id
+        if message.text != &#39;Cancel&#39;:
+            amount_value = helper.validate_entered_amount(message.text)
+            data = helper.getCategoryBudget(chat_id)
+            categ_sum = 0.0
+            if data is not None and category in data :
+                categ_sum = float(data[category]) 
+            
+            category_total = sum(float(value) for value in data.values()) if data is not None else 0.0
+            total_sum = category_total + float(amount_value) - categ_sum
+            total_income = float(helper.getTotalIncome(chat_id))
+
+            if total_income is not None and total_sum &gt; total_income:
+                budget_deficit = total_sum - total_income
+                alert_message = f&#34;⚠️\uFE0F Your total budget exceeds your total income by ${budget_deficit:.2f} &#34; + &#34;\n(Do you want to update your budget)&#34;
+    
+                # Define markup here before using it
+                markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+                options = helper.getYesNoOptions().values()
+                markup.row_width = 2
+                for c in options:
+                    markup.add(c)
+                
+                bot.send_message(chat_id, alert_message, reply_markup=markup)
+                msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+                bot.register_next_step_handler(msg, post_yesno_selection, bot, amount_value, category)
+            else :
+                update_category_budget_amount(chat_id, bot, amount_value, category)
+      
+        else :
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_category_selection"><code class="name flex">
+<span>def <span class="ident">post_category_selection</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_category_selection(message, bot):
+    try:
+        chat_id = message.chat.id
+        selected_category = message.text
+        categories = helper.getSpendCategories()
+        if selected_category not in categories:
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this category \&#34;{}\&#34;!&#34;.format(selected_category))
+        if selected_category != &#34;Cancel&#34;:
+            if helper.isCategoryBudgetByCategoryAvailable(chat_id, selected_category):
+                currentBudget = helper.getCategoryBudgetByCategory(chat_id, selected_category)
+                msg_string = &#39;Current monthly budget for {} is {}\n\nEnter your new monthly budget for {} (Enter numeric values only) or Enter Cancel to cancel the operation\n&#39;
+                message = bot.send_message(chat_id, msg_string.format(selected_category, currentBudget, selected_category))
+            else:
+                message = bot.send_message(chat_id, &#39;Enter monthly budget for &#39; + selected_category + &#39;(Enter numeric values only) or Enter Cancel to cancel the operation\n&#39;)
+            bot.register_next_step_handler(message, post_category_amount_input, bot, selected_category)
+        else:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_option_selection"><code class="name flex">
+<span>def <span class="ident">post_option_selection</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_option_selection(message, bot):
+    selected_option = message.text
+    options = helper.getUpdateOptions()
+    if selected_option == options[&#39;continue&#39;]:
+        update_category_budget(message, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_overall_amount_input"><code class="name flex">
+<span>def <span class="ident">post_overall_amount_input</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_overall_amount_input(message, bot):
+    try:
+        chat_id = message.chat.id
+
+        if message.text != &#34;Cancel&#34;:
+            amount_value = helper.validate_entered_amount(message.text)
+            total_income = helper.getTotalIncome(chat_id)
+
+            if total_income is not None and float(amount_value) &gt; float(total_income):
+                budget_deficit = float(amount_value) - float(total_income)
+                alert_message = f&#34;⚠️\uFE0F Your budget exceeds your total income by ${budget_deficit:.2f} &#34; + &#34;\n(Do you want to update your budget)&#34;
+    
+                # Define markup here before using it
+                markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+                options = helper.getYesNoOptions().values()
+                markup.row_width = 2
+                for c in options:
+                    markup.add(c)
+                
+                bot.send_message(chat_id, alert_message, reply_markup=markup)
+                msg = bot.reply_to(message, &#39;Select Option&#39;, reply_markup=markup)
+                bot.register_next_step_handler(msg, post__selection, bot, amount_value)
+        
+            else :
+                update_overall_budget_amount(message, amount_value, bot)
+
+        else:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_type_selection"><code class="name flex">
+<span>def <span class="ident">post_type_selection</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_type_selection(message, bot):
+    try:
+        chat_id = message.chat.id
+        op = message.text
+        options = helper.getBudgetTypes()
+
+        # Check if the selected option is valid
+        if op not in options.values():
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this operation \&#34;{}\&#34;!&#34;.format(op))
+            
+        if op == options[&#39;overall&#39;]:
+            update_overall_budget(chat_id, bot)
+        elif op == options[&#39;category&#39;]:
+            update_category_budget(message, bot)
+        elif op == options[&#39;cancel&#39;]:
+            text_intro = &#34;Cancelled the operation.\nSelect &#34;
+            commands = helper.getExitCommands()
+            for c in commands:  # generate help text out of the commands dictionary defined at the top
+                text_intro += &#34;/&#34; + c + &#34; to &#34;
+                text_intro += commands[c] + &#34;\n\n&#34;
+            bot.send_message(chat_id, text_intro)
+        else :
+            bot.send_message(chat_id, &#39;Invalid&#39;, reply_markup=types.ReplyKeyboardRemove())
+            raise Exception(&#34;Sorry I don&#39;t recognise this operation \&#34;{}\&#34;!&#34;.format(op))
+    except Exception as e:
+        helper.throw_exception(e, message, bot, logging)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.post_yesno_selection"><code class="name flex">
+<span>def <span class="ident">post_yesno_selection</span></span>(<span>message, bot, amount_val, category)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def post_yesno_selection(message, bot, amount_val, category ) :
+    chat_id = message.chat.id
+    selected_option = message.text
+    options = helper.getYesNoOptions()
+    if selected_option == options[&#39;yes&#39;]:
+        update_category_budget_amount( chat_id, bot, amount_val, category)
+    else :
+        update_category_budget(message, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.run"><code class="name flex">
+<span>def <span class="ident">run</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run(message, bot):
+    chat_id = message.chat.id # Get the chat ID from the message
+    
+    # Check if an overall budget is available for the user
+    if helper.isOverallBudgetAvailable(chat_id):
+        update_overall_budget(chat_id, bot)
+    
+    # Check if a category budget is available for the user
+    elif helper.isCategoryBudgetAvailable(chat_id):
+        update_category_budget(message, bot)
+    else:
+        # If no budget is available, prompt the user to select a budget type
+        markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+        options = helper.getBudgetTypes()
+        markup.row_width = 2
+        for c in options.values():
+            markup.add(c)
+        msg = bot.reply_to(message, &#39;Select Budget Type or Select Cancel to cancel the operation&#39;, reply_markup=markup)
+        bot.register_next_step_handler(msg, post_type_selection, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.update_category_budget"><code class="name flex">
+<span>def <span class="ident">update_category_budget</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_category_budget(message, bot):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    categories = helper.getSpendCategories()
+    markup.row_width = 2
+    for c in categories:
+        markup.add(c)
+    msg = bot.reply_to(message, &#39;Select Category or Select Cancel to cancel the operation&#39;, reply_markup=markup)
+    bot.register_next_step_handler(msg, post_category_selection, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.update_category_budget_amount"><code class="name flex">
+<span>def <span class="ident">update_category_budget_amount</span></span>(<span>chat_id, bot, amount_val, category)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_category_budget_amount(chat_id, bot, amount_val, category) :
+    if amount_val == 0:
+            raise Exception(&#34;Invalid amount.&#34;)
+    user_list = helper.read_json()
+    if str(chat_id) not in user_list:
+        user_list[str(chat_id)] = helper.createNewUserRecord()
+    if user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;] is None:
+        user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;] = {}
+    user_list[str(chat_id)][&#39;budget&#39;][&#39;category&#39;][category] = amount_val
+    helper.write_json(user_list)
+    message = bot.send_message(chat_id, &#39;Budget for &#39; + category + &#39; Created!&#39;)
+    post_category_add(message, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.update_overall_budget"><code class="name flex">
+<span>def <span class="ident">update_overall_budget</span></span>(<span>chat_id, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_overall_budget(chat_id, bot):
+    if (helper.isOverallBudgetAvailable(chat_id)):
+        currentBudget = helper.getOverallBudget(chat_id)
+        msg_string = &#39;Current Budget is ${}\n\nEnter your new monthly budget (Enter numeric values only) or Enter Cancel to cancel the operation \n&#39;
+        message = bot.send_message(chat_id, msg_string.format(currentBudget))
+    else:
+        message = bot.send_message(chat_id, &#39;Enter your monthly budget (Enter numeric values only)or Enter Cancel to cancel the operation \n&#39;)
+    bot.register_next_step_handler(message, post_overall_amount_input, bot)</code></pre>
+</details>
+</dd>
+<dt id="budget_update.update_overall_budget_amount"><code class="name flex">
+<span>def <span class="ident">update_overall_budget_amount</span></span>(<span>message, amount_value, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_overall_budget_amount(message, amount_value, bot) :
+    chat_id = message.chat.id
+    if amount_value == 0:
+        raise Exception(&#34;Invalid amount.&#34;)
+    user_list = helper.read_json()
+    if str(chat_id) not in user_list:
+            user_list[str(chat_id)] = helper.createNewUserRecord()
+    user_list[str(chat_id)][&#39;budget&#39;][&#39;overall&#39;] = amount_value
+    helper.write_json(user_list)
+    bot.send_message(chat_id, &#39;Budget Updated!&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="budget_update.post__selection" href="#budget_update.post__selection">post__selection</a></code></li>
+<li><code><a title="budget_update.post_category_add" href="#budget_update.post_category_add">post_category_add</a></code></li>
+<li><code><a title="budget_update.post_category_amount_input" href="#budget_update.post_category_amount_input">post_category_amount_input</a></code></li>
+<li><code><a title="budget_update.post_category_selection" href="#budget_update.post_category_selection">post_category_selection</a></code></li>
+<li><code><a title="budget_update.post_option_selection" href="#budget_update.post_option_selection">post_option_selection</a></code></li>
+<li><code><a title="budget_update.post_overall_amount_input" href="#budget_update.post_overall_amount_input">post_overall_amount_input</a></code></li>
+<li><code><a title="budget_update.post_type_selection" href="#budget_update.post_type_selection">post_type_selection</a></code></li>
+<li><code><a title="budget_update.post_yesno_selection" href="#budget_update.post_yesno_selection">post_yesno_selection</a></code></li>
+<li><code><a title="budget_update.run" href="#budget_update.run">run</a></code></li>
+<li><code><a title="budget_update.update_category_budget" href="#budget_update.update_category_budget">update_category_budget</a></code></li>
+<li><code><a title="budget_update.update_category_budget_amount" href="#budget_update.update_category_budget_amount">update_category_budget_amount</a></code></li>
+<li><code><a title="budget_update.update_overall_budget" href="#budget_update.update_overall_budget">update_overall_budget</a></code></li>
+<li><code><a title="budget_update.update_overall_budget_amount" href="#budget_update.update_overall_budget_amount">update_overall_budget_amount</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

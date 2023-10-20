@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>helper API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>helper</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import re
+import json
+import os
+from datetime import datetime
+
+choices = [&#39;Date&#39;, &#39;Category&#39;, &#39;Cost&#39;]
+plot = [&#39;Bar with budget&#39;, &#39;Pie&#39;,&#39;Bar without budget&#39;,&#39;Cancel&#39;]
+spend_display_option = [&#39;Day&#39;, &#39;Month&#39;,&#39;Cancel&#39;]
+spend_estimate_option = [&#39;Next day&#39;, &#39;Next month&#39;,&#39;Cancel&#39;]
+update_options = {
+    &#39;continue&#39;: &#39;Continue&#39;,
+    &#39;exit&#39;: &#39;Exit&#39;
+}
+
+yes_or_no = {
+    &#39;yes&#39;: &#39;Yes&#39;,
+    &#39;no&#39;: &#39;No&#39;
+}
+
+options = {
+    &#39;update&#39;: &#39;Add/Update&#39;,
+    &#39;view&#39;: &#39;View&#39;,
+    &#39;delete&#39;: &#39;Delete&#39;,
+    &#39;cancel&#39;: &#39;Cancel&#39;
+}
+
+budget_types = {
+    &#39;overall&#39;: &#39;Overall Budget&#39;,
+    &#39;category&#39;: &#39;Category-Wise Budget&#39;,
+    &#39;cancel&#39; : &#39;Cancel&#39;
+}
+
+data_format = {
+    &#39;data&#39;: [],
+    &#39;income&#39;: None,
+    &#39;budget&#39;: {
+        &#39;overall&#39;: None,
+        &#39;category&#39;: None
+    }
+}
+
+category_options = {
+    &#39;add&#39;: &#39;Add&#39;,
+    &#39;delete&#39;: &#39;Delete&#39;,
+    &#39;view&#39;: &#39;Show Categories&#39;,
+    &#39;cancel&#39; : &#39;Cancel&#39;
+}
+
+# set of implemented commands and their description
+commands = {
+    &#39;menu&#39;: &#39;Display this menu&#39;,    
+    &#39;income&#39;: &#39;Add/Update/View/Delete income&#39;,
+    &#39;add&#39;: &#39;Record/Add a new spending&#39;,
+    &#39;add_recurring&#39;: &#39;Add a new recurring expense for future months&#39;,
+    &#39;display&#39;: &#39;Show sum of expenditure for the current day/month&#39;,
+    &#39;estimate&#39;: &#39;Show an estimate of expenditure for the next day/month&#39;,
+    &#39;history&#39;: &#39;Display spending history&#39;,
+    &#39;delete&#39;: &#39;Clear/Erase all your records&#39;,
+    &#39;edit&#39;: &#39;Edit/Change spending details&#39;,
+    &#39;budget&#39;: &#39;Add/Update/View/Delete budget&#39;,
+    &#39;category&#39;: &#39;Add/Delete/Show custom categories&#39;,
+    &#39;summary&#39;: &#39;show summary of spending&#39;,
+    &#39;exit&#39; : &#39;Exit from MyDollarBot&#39;
+}
+exit_commands = {
+    &#39;menu&#39;: &#39;Display the menu&#39;
+}
+
+
+dateFormat = &#39;%d-%b-%Y&#39;
+timeFormat = &#39;%H:%M&#39;
+monthFormat = &#39;%b-%Y&#39;
+
+
+# function to load .json expense record data
+def read_json():
+    try:
+        if not os.path.exists(&#39;expense_record.json&#39;):
+            with open(&#39;expense_record.json&#39;, &#39;w&#39;) as json_file:
+                json_file.write(&#39;{}&#39;)
+            return json.dumps(&#39;{}&#39;)
+        elif os.stat(&#39;expense_record.json&#39;).st_size != 0:
+            with open(&#39;expense_record.json&#39;) as expense_record:
+                expense_record_data = json.load(expense_record)
+            return expense_record_data
+
+    except FileNotFoundError:
+        print(&#34;---------NO RECORDS FOUND---------&#34;)
+
+
+def write_json(user_list):
+    try:
+        with open(&#39;expense_record.json&#39;, &#39;w&#39;) as json_file:
+            json.dump(user_list, json_file, ensure_ascii=False, indent=4)
+    except FileNotFoundError:
+        print(&#39;Sorry, the data file could not be found.&#39;)
+
+
+def validate_entered_amount(amount_entered):
+    if amount_entered is None:
+        return 0
+    if re.match(&#34;^[1-9][0-9]{0,14}\\.[0-9]*$&#34;, amount_entered) or re.match(&#34;^[1-9][0-9]{0,14}$&#34;, amount_entered):
+        amount = round(float(amount_entered), 2)
+        if amount &gt; 0:
+            return str(amount)
+    return 0
+
+
+def validate_entered_duration(duration_entered):
+    if duration_entered is None:
+        return 0
+    if re.match(&#34;^[1-9][0-9]{0,14}&#34;, duration_entered):
+        duration = int(duration_entered)
+        if duration &gt; 0:
+            return str(duration)
+    return 0
+
+
+def getUserHistory(chat_id):
+    data = getUserData(chat_id)
+    if data is not None:
+        return data[&#39;data&#39;]
+    return None
+
+
+def getUserData(chat_id):
+    user_list = read_json()
+    if user_list is None:
+        return None
+    if (str(chat_id) in user_list):
+        return user_list[str(chat_id)]
+    return None
+
+
+def throw_exception(e, message, bot, logging):
+    logging.exception(str(e))
+    bot.reply_to(message, &#39;Oh no! &#39; + str(e))
+
+
+def createNewUserRecord():
+    return data_format
+
+
+def getOverallBudget(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;budget&#39;][&#39;overall&#39;]
+
+def getTotalIncome(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;income&#39;]
+
+
+def getCategoryBudget(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;budget&#39;][&#39;category&#39;]
+
+
+def getCategoryBudgetByCategory(chatId, cat):
+    if not isCategoryBudgetByCategoryAvailable(chatId, cat):
+        return None
+    data = getCategoryBudget(chatId)
+    return data[cat]
+
+
+def canAddBudget(chatId):
+    return (getOverallBudget(chatId) is None) and (getCategoryBudget(chatId) is None)
+
+
+def isOverallBudgetAvailable(chatId):
+    return getOverallBudget(chatId) is not None
+
+
+def isTotalIncomeAvailable(chatId):
+    return getTotalIncome(chatId) is not None 
+
+def isCategoryBudgetAvailable(chatId):
+    return getCategoryBudget(chatId) is not None
+
+
+def isCategoryBudgetByCategoryAvailable(chatId, cat):
+    data = getCategoryBudget(chatId)
+    if data is None:
+        return False
+    return cat in data.keys()
+
+
+def display_remaining_budget(message, bot, cat):
+    chat_id = message.chat.id
+    if isOverallBudgetAvailable(chat_id):
+        display_remaining_overall_budget(message, bot)
+    elif isCategoryBudgetByCategoryAvailable(chat_id, cat):
+        display_remaining_category_budget(message, bot, cat)
+
+
+def display_remaining_overall_budget(message, bot):
+    print(&#39;here&#39;)
+    chat_id = message.chat.id
+    remaining_budget = calculateRemainingOverallBudget(chat_id)
+    print(&#34;here&#34;, remaining_budget)
+    if remaining_budget &gt;= 0:
+        msg = &#39;\nRemaining Overall Budget is $&#39; + str(remaining_budget)
+    else:
+        msg = &#39;\nBudget Exceded!\nExpenditure exceeds the budget by $&#39; + str(remaining_budget)[1:]
+    bot.send_message(chat_id, msg)
+
+
+def calculateRemainingOverallBudget(chat_id):
+    budget = getOverallBudget(chat_id)
+    history = getUserHistory(chat_id)
+    query = datetime.now().today().strftime(getMonthFormat())
+    queryResult = [value for index, value in enumerate(history) if str(query) in value]
+
+    return float(budget) - calculate_total_spendings(queryResult)
+
+
+def calculate_total_spendings(queryResult):
+    total = 0
+
+    for row in queryResult:
+        s = row.split(&#39;,&#39;)
+        total = total + float(s[2])
+    return total
+
+
+def display_remaining_category_budget(message, bot, cat):
+    chat_id = message.chat.id
+    remaining_budget = calculateRemainingCategoryBudget(chat_id, cat)
+    if remaining_budget &gt;= 0:
+        msg = &#39;\nRemaining Budget for &#39; + cat + &#39; is $&#39; + str(remaining_budget)
+    else:
+        msg = &#39;\nBudget for &#39; + cat + &#39; Exceded!\nExpenditure exceeds the budget by $&#39; + str(abs(remaining_budget))
+    bot.send_message(chat_id, msg)
+
+
+def calculateRemainingCategoryBudget(chat_id, cat):
+    budget = getCategoryBudgetByCategory(chat_id, cat)
+    history = getUserHistory(chat_id)
+    query = datetime.now().today().strftime(getMonthFormat())
+    queryResult = [value for index, value in enumerate(history) if str(query) in value]
+
+    return float(budget) - calculate_total_spendings_for_category(queryResult, cat)
+
+
+def calculate_total_spendings_for_category(queryResult, cat):
+    total = 0
+
+    for row in queryResult:
+        s = row.split(&#39;,&#39;)
+        if cat == s[1]:
+            total = total + float(s[2])
+    return total
+
+
+def getSpendCategories():
+    with open(&#34;categories.txt&#34;, &#34;r&#34;) as tf:
+        spend_categories = tf.read().split(&#39;,&#39;)
+    return spend_categories
+
+def getplot():
+    return plot
+
+def getSpendDisplayOptions():
+    return spend_display_option
+
+
+def getSpendEstimateOptions():
+    return spend_estimate_option
+
+
+def getCommands():
+    return commands
+
+
+def getDateFormat():
+    return dateFormat
+
+
+def getTimeFormat():
+    return timeFormat
+
+
+def getMonthFormat():
+    return monthFormat
+
+
+def getChoices():
+    return choices
+
+
+def getOptions():
+    return options
+
+
+def getBudgetTypes():
+    return budget_types
+
+
+def getUpdateOptions():
+    return update_options
+
+def getYesNoOptions():
+    return yes_or_no
+
+def getCategoryOptions():
+    return category_options
+
+
+def getExitCommands():
+    return exit_commands</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="helper.calculateRemainingCategoryBudget"><code class="name flex">
+<span>def <span class="ident">calculateRemainingCategoryBudget</span></span>(<span>chat_id, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calculateRemainingCategoryBudget(chat_id, cat):
+    budget = getCategoryBudgetByCategory(chat_id, cat)
+    history = getUserHistory(chat_id)
+    query = datetime.now().today().strftime(getMonthFormat())
+    queryResult = [value for index, value in enumerate(history) if str(query) in value]
+
+    return float(budget) - calculate_total_spendings_for_category(queryResult, cat)</code></pre>
+</details>
+</dd>
+<dt id="helper.calculateRemainingOverallBudget"><code class="name flex">
+<span>def <span class="ident">calculateRemainingOverallBudget</span></span>(<span>chat_id)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calculateRemainingOverallBudget(chat_id):
+    budget = getOverallBudget(chat_id)
+    history = getUserHistory(chat_id)
+    query = datetime.now().today().strftime(getMonthFormat())
+    queryResult = [value for index, value in enumerate(history) if str(query) in value]
+
+    return float(budget) - calculate_total_spendings(queryResult)</code></pre>
+</details>
+</dd>
+<dt id="helper.calculate_total_spendings"><code class="name flex">
+<span>def <span class="ident">calculate_total_spendings</span></span>(<span>queryResult)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calculate_total_spendings(queryResult):
+    total = 0
+
+    for row in queryResult:
+        s = row.split(&#39;,&#39;)
+        total = total + float(s[2])
+    return total</code></pre>
+</details>
+</dd>
+<dt id="helper.calculate_total_spendings_for_category"><code class="name flex">
+<span>def <span class="ident">calculate_total_spendings_for_category</span></span>(<span>queryResult, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calculate_total_spendings_for_category(queryResult, cat):
+    total = 0
+
+    for row in queryResult:
+        s = row.split(&#39;,&#39;)
+        if cat == s[1]:
+            total = total + float(s[2])
+    return total</code></pre>
+</details>
+</dd>
+<dt id="helper.canAddBudget"><code class="name flex">
+<span>def <span class="ident">canAddBudget</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def canAddBudget(chatId):
+    return (getOverallBudget(chatId) is None) and (getCategoryBudget(chatId) is None)</code></pre>
+</details>
+</dd>
+<dt id="helper.createNewUserRecord"><code class="name flex">
+<span>def <span class="ident">createNewUserRecord</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def createNewUserRecord():
+    return data_format</code></pre>
+</details>
+</dd>
+<dt id="helper.display_remaining_budget"><code class="name flex">
+<span>def <span class="ident">display_remaining_budget</span></span>(<span>message, bot, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display_remaining_budget(message, bot, cat):
+    chat_id = message.chat.id
+    if isOverallBudgetAvailable(chat_id):
+        display_remaining_overall_budget(message, bot)
+    elif isCategoryBudgetByCategoryAvailable(chat_id, cat):
+        display_remaining_category_budget(message, bot, cat)</code></pre>
+</details>
+</dd>
+<dt id="helper.display_remaining_category_budget"><code class="name flex">
+<span>def <span class="ident">display_remaining_category_budget</span></span>(<span>message, bot, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display_remaining_category_budget(message, bot, cat):
+    chat_id = message.chat.id
+    remaining_budget = calculateRemainingCategoryBudget(chat_id, cat)
+    if remaining_budget &gt;= 0:
+        msg = &#39;\nRemaining Budget for &#39; + cat + &#39; is $&#39; + str(remaining_budget)
+    else:
+        msg = &#39;\nBudget for &#39; + cat + &#39; Exceded!\nExpenditure exceeds the budget by $&#39; + str(abs(remaining_budget))
+    bot.send_message(chat_id, msg)</code></pre>
+</details>
+</dd>
+<dt id="helper.display_remaining_overall_budget"><code class="name flex">
+<span>def <span class="ident">display_remaining_overall_budget</span></span>(<span>message, bot)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display_remaining_overall_budget(message, bot):
+    print(&#39;here&#39;)
+    chat_id = message.chat.id
+    remaining_budget = calculateRemainingOverallBudget(chat_id)
+    print(&#34;here&#34;, remaining_budget)
+    if remaining_budget &gt;= 0:
+        msg = &#39;\nRemaining Overall Budget is $&#39; + str(remaining_budget)
+    else:
+        msg = &#39;\nBudget Exceded!\nExpenditure exceeds the budget by $&#39; + str(remaining_budget)[1:]
+    bot.send_message(chat_id, msg)</code></pre>
+</details>
+</dd>
+<dt id="helper.getBudgetTypes"><code class="name flex">
+<span>def <span class="ident">getBudgetTypes</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getBudgetTypes():
+    return budget_types</code></pre>
+</details>
+</dd>
+<dt id="helper.getCategoryBudget"><code class="name flex">
+<span>def <span class="ident">getCategoryBudget</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getCategoryBudget(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;budget&#39;][&#39;category&#39;]</code></pre>
+</details>
+</dd>
+<dt id="helper.getCategoryBudgetByCategory"><code class="name flex">
+<span>def <span class="ident">getCategoryBudgetByCategory</span></span>(<span>chatId, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getCategoryBudgetByCategory(chatId, cat):
+    if not isCategoryBudgetByCategoryAvailable(chatId, cat):
+        return None
+    data = getCategoryBudget(chatId)
+    return data[cat]</code></pre>
+</details>
+</dd>
+<dt id="helper.getCategoryOptions"><code class="name flex">
+<span>def <span class="ident">getCategoryOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getCategoryOptions():
+    return category_options</code></pre>
+</details>
+</dd>
+<dt id="helper.getChoices"><code class="name flex">
+<span>def <span class="ident">getChoices</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getChoices():
+    return choices</code></pre>
+</details>
+</dd>
+<dt id="helper.getCommands"><code class="name flex">
+<span>def <span class="ident">getCommands</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getCommands():
+    return commands</code></pre>
+</details>
+</dd>
+<dt id="helper.getDateFormat"><code class="name flex">
+<span>def <span class="ident">getDateFormat</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getDateFormat():
+    return dateFormat</code></pre>
+</details>
+</dd>
+<dt id="helper.getExitCommands"><code class="name flex">
+<span>def <span class="ident">getExitCommands</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getExitCommands():
+    return exit_commands</code></pre>
+</details>
+</dd>
+<dt id="helper.getMonthFormat"><code class="name flex">
+<span>def <span class="ident">getMonthFormat</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getMonthFormat():
+    return monthFormat</code></pre>
+</details>
+</dd>
+<dt id="helper.getOptions"><code class="name flex">
+<span>def <span class="ident">getOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getOptions():
+    return options</code></pre>
+</details>
+</dd>
+<dt id="helper.getOverallBudget"><code class="name flex">
+<span>def <span class="ident">getOverallBudget</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getOverallBudget(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;budget&#39;][&#39;overall&#39;]</code></pre>
+</details>
+</dd>
+<dt id="helper.getSpendCategories"><code class="name flex">
+<span>def <span class="ident">getSpendCategories</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getSpendCategories():
+    with open(&#34;categories.txt&#34;, &#34;r&#34;) as tf:
+        spend_categories = tf.read().split(&#39;,&#39;)
+    return spend_categories</code></pre>
+</details>
+</dd>
+<dt id="helper.getSpendDisplayOptions"><code class="name flex">
+<span>def <span class="ident">getSpendDisplayOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getSpendDisplayOptions():
+    return spend_display_option</code></pre>
+</details>
+</dd>
+<dt id="helper.getSpendEstimateOptions"><code class="name flex">
+<span>def <span class="ident">getSpendEstimateOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getSpendEstimateOptions():
+    return spend_estimate_option</code></pre>
+</details>
+</dd>
+<dt id="helper.getTimeFormat"><code class="name flex">
+<span>def <span class="ident">getTimeFormat</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getTimeFormat():
+    return timeFormat</code></pre>
+</details>
+</dd>
+<dt id="helper.getTotalIncome"><code class="name flex">
+<span>def <span class="ident">getTotalIncome</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getTotalIncome(chatId):
+    data = getUserData(chatId)
+    if data is None:
+        return None
+    return data[&#39;income&#39;]</code></pre>
+</details>
+</dd>
+<dt id="helper.getUpdateOptions"><code class="name flex">
+<span>def <span class="ident">getUpdateOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getUpdateOptions():
+    return update_options</code></pre>
+</details>
+</dd>
+<dt id="helper.getUserData"><code class="name flex">
+<span>def <span class="ident">getUserData</span></span>(<span>chat_id)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getUserData(chat_id):
+    user_list = read_json()
+    if user_list is None:
+        return None
+    if (str(chat_id) in user_list):
+        return user_list[str(chat_id)]
+    return None</code></pre>
+</details>
+</dd>
+<dt id="helper.getUserHistory"><code class="name flex">
+<span>def <span class="ident">getUserHistory</span></span>(<span>chat_id)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getUserHistory(chat_id):
+    data = getUserData(chat_id)
+    if data is not None:
+        return data[&#39;data&#39;]
+    return None</code></pre>
+</details>
+</dd>
+<dt id="helper.getYesNoOptions"><code class="name flex">
+<span>def <span class="ident">getYesNoOptions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getYesNoOptions():
+    return yes_or_no</code></pre>
+</details>
+</dd>
+<dt id="helper.getplot"><code class="name flex">
+<span>def <span class="ident">getplot</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getplot():
+    return plot</code></pre>
+</details>
+</dd>
+<dt id="helper.isCategoryBudgetAvailable"><code class="name flex">
+<span>def <span class="ident">isCategoryBudgetAvailable</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isCategoryBudgetAvailable(chatId):
+    return getCategoryBudget(chatId) is not None</code></pre>
+</details>
+</dd>
+<dt id="helper.isCategoryBudgetByCategoryAvailable"><code class="name flex">
+<span>def <span class="ident">isCategoryBudgetByCategoryAvailable</span></span>(<span>chatId, cat)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isCategoryBudgetByCategoryAvailable(chatId, cat):
+    data = getCategoryBudget(chatId)
+    if data is None:
+        return False
+    return cat in data.keys()</code></pre>
+</details>
+</dd>
+<dt id="helper.isOverallBudgetAvailable"><code class="name flex">
+<span>def <span class="ident">isOverallBudgetAvailable</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isOverallBudgetAvailable(chatId):
+    return getOverallBudget(chatId) is not None</code></pre>
+</details>
+</dd>
+<dt id="helper.isTotalIncomeAvailable"><code class="name flex">
+<span>def <span class="ident">isTotalIncomeAvailable</span></span>(<span>chatId)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isTotalIncomeAvailable(chatId):
+    return getTotalIncome(chatId) is not None </code></pre>
+</details>
+</dd>
+<dt id="helper.read_json"><code class="name flex">
+<span>def <span class="ident">read_json</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_json():
+    try:
+        if not os.path.exists(&#39;expense_record.json&#39;):
+            with open(&#39;expense_record.json&#39;, &#39;w&#39;) as json_file:
+                json_file.write(&#39;{}&#39;)
+            return json.dumps(&#39;{}&#39;)
+        elif os.stat(&#39;expense_record.json&#39;).st_size != 0:
+            with open(&#39;expense_record.json&#39;) as expense_record:
+                expense_record_data = json.load(expense_record)
+            return expense_record_data
+
+    except FileNotFoundError:
+        print(&#34;---------NO RECORDS FOUND---------&#34;)</code></pre>
+</details>
+</dd>
+<dt id="helper.throw_exception"><code class="name flex">
+<span>def <span class="ident">throw_exception</span></span>(<span>e, message, bot, logging)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def throw_exception(e, message, bot, logging):
+    logging.exception(str(e))
+    bot.reply_to(message, &#39;Oh no! &#39; + str(e))</code></pre>
+</details>
+</dd>
+<dt id="helper.validate_entered_amount"><code class="name flex">
+<span>def <span class="ident">validate_entered_amount</span></span>(<span>amount_entered)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def validate_entered_amount(amount_entered):
+    if amount_entered is None:
+        return 0
+    if re.match(&#34;^[1-9][0-9]{0,14}\\.[0-9]*$&#34;, amount_entered) or re.match(&#34;^[1-9][0-9]{0,14}$&#34;, amount_entered):
+        amount = round(float(amount_entered), 2)
+        if amount &gt; 0:
+            return str(amount)
+    return 0</code></pre>
+</details>
+</dd>
+<dt id="helper.validate_entered_duration"><code class="name flex">
+<span>def <span class="ident">validate_entered_duration</span></span>(<span>duration_entered)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def validate_entered_duration(duration_entered):
+    if duration_entered is None:
+        return 0
+    if re.match(&#34;^[1-9][0-9]{0,14}&#34;, duration_entered):
+        duration = int(duration_entered)
+        if duration &gt; 0:
+            return str(duration)
+    return 0</code></pre>
+</details>
+</dd>
+<dt id="helper.write_json"><code class="name flex">
+<span>def <span class="ident">write_json</span></span>(<span>user_list)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def write_json(user_list):
+    try:
+        with open(&#39;expense_record.json&#39;, &#39;w&#39;) as json_file:
+            json.dump(user_list, json_file, ensure_ascii=False, indent=4)
+    except FileNotFoundError:
+        print(&#39;Sorry, the data file could not be found.&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="helper.calculateRemainingCategoryBudget" href="#helper.calculateRemainingCategoryBudget">calculateRemainingCategoryBudget</a></code></li>
+<li><code><a title="helper.calculateRemainingOverallBudget" href="#helper.calculateRemainingOverallBudget">calculateRemainingOverallBudget</a></code></li>
+<li><code><a title="helper.calculate_total_spendings" href="#helper.calculate_total_spendings">calculate_total_spendings</a></code></li>
+<li><code><a title="helper.calculate_total_spendings_for_category" href="#helper.calculate_total_spendings_for_category">calculate_total_spendings_for_category</a></code></li>
+<li><code><a title="helper.canAddBudget" href="#helper.canAddBudget">canAddBudget</a></code></li>
+<li><code><a title="helper.createNewUserRecord" href="#helper.createNewUserRecord">createNewUserRecord</a></code></li>
+<li><code><a title="helper.display_remaining_budget" href="#helper.display_remaining_budget">display_remaining_budget</a></code></li>
+<li><code><a title="helper.display_remaining_category_budget" href="#helper.display_remaining_category_budget">display_remaining_category_budget</a></code></li>
+<li><code><a title="helper.display_remaining_overall_budget" href="#helper.display_remaining_overall_budget">display_remaining_overall_budget</a></code></li>
+<li><code><a title="helper.getBudgetTypes" href="#helper.getBudgetTypes">getBudgetTypes</a></code></li>
+<li><code><a title="helper.getCategoryBudget" href="#helper.getCategoryBudget">getCategoryBudget</a></code></li>
+<li><code><a title="helper.getCategoryBudgetByCategory" href="#helper.getCategoryBudgetByCategory">getCategoryBudgetByCategory</a></code></li>
+<li><code><a title="helper.getCategoryOptions" href="#helper.getCategoryOptions">getCategoryOptions</a></code></li>
+<li><code><a title="helper.getChoices" href="#helper.getChoices">getChoices</a></code></li>
+<li><code><a title="helper.getCommands" href="#helper.getCommands">getCommands</a></code></li>
+<li><code><a title="helper.getDateFormat" href="#helper.getDateFormat">getDateFormat</a></code></li>
+<li><code><a title="helper.getExitCommands" href="#helper.getExitCommands">getExitCommands</a></code></li>
+<li><code><a title="helper.getMonthFormat" href="#helper.getMonthFormat">getMonthFormat</a></code></li>
+<li><code><a title="helper.getOptions" href="#helper.getOptions">getOptions</a></code></li>
+<li><code><a title="helper.getOverallBudget" href="#helper.getOverallBudget">getOverallBudget</a></code></li>
+<li><code><a title="helper.getSpendCategories" href="#helper.getSpendCategories">getSpendCategories</a></code></li>
+<li><code><a title="helper.getSpendDisplayOptions" href="#helper.getSpendDisplayOptions">getSpendDisplayOptions</a></code></li>
+<li><code><a title="helper.getSpendEstimateOptions" href="#helper.getSpendEstimateOptions">getSpendEstimateOptions</a></code></li>
+<li><code><a title="helper.getTimeFormat" href="#helper.getTimeFormat">getTimeFormat</a></code></li>
+<li><code><a title="helper.getTotalIncome" href="#helper.getTotalIncome">getTotalIncome</a></code></li>
+<li><code><a title="helper.getUpdateOptions" href="#helper.getUpdateOptions">getUpdateOptions</a></code></li>
+<li><code><a title="helper.getUserData" href="#helper.getUserData">getUserData</a></code></li>
+<li><code><a title="helper.getUserHistory" href="#helper.getUserHistory">getUserHistory</a></code></li>
+<li><code><a title="helper.getYesNoOptions" href="#helper.getYesNoOptions">getYesNoOptions</a></code></li>
+<li><code><a title="helper.getplot" href="#helper.getplot">getplot</a></code></li>
+<li><code><a title="helper.isCategoryBudgetAvailable" href="#helper.isCategoryBudgetAvailable">isCategoryBudgetAvailable</a></code></li>
+<li><code><a title="helper.isCategoryBudgetByCategoryAvailable" href="#helper.isCategoryBudgetByCategoryAvailable">isCategoryBudgetByCategoryAvailable</a></code></li>
+<li><code><a title="helper.isOverallBudgetAvailable" href="#helper.isOverallBudgetAvailable">isOverallBudgetAvailable</a></code></li>
+<li><code><a title="helper.isTotalIncomeAvailable" href="#helper.isTotalIncomeAvailable">isTotalIncomeAvailable</a></code></li>
+<li><code><a title="helper.read_json" href="#helper.read_json">read_json</a></code></li>
+<li><code><a title="helper.throw_exception" href="#helper.throw_exception">throw_exception</a></code></li>
+<li><code><a title="helper.validate_entered_amount" href="#helper.validate_entered_amount">validate_entered_amount</a></code></li>
+<li><code><a title="helper.validate_entered_duration" href="#helper.validate_entered_duration">validate_entered_duration</a></code></li>
+<li><code><a title="helper.write_json" href="#helper.write_json">write_json</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>summarize API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>summarize</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from math import remainder
+from fpdf import FPDF
+from PIL import Image
+
+class PDF(FPDF):
+    def header(self):
+        self.set_fill_color(169, 204, 227)  # Background color for the entire top part
+        self.rect(0, 0, 210, 25, &#39;DF&#39;)  # Draw a filled rectangle for the entire top part
+        self.set_font(&#39;Arial&#39;, &#39;B&#39;, 16)  # Larger font for the header
+        self.set_text_color(0, 0, 0)     # Text color: Black
+        self.cell(0, 20, &#39;Dollar Bot Summary Report&#39;, 0, 1, &#39;C&#39;, 1)   # Centered title in the header
+        #self.ln(15) 
+        # Add a dollar sign logo to the top right corner of the header
+        self.image(&#39;DollarBotLogo.png&#39;, 174, 0, 37)
+        
+        self.ln(20)  # Increase the space after the header
+
+    def footer(self):
+        self.set_font(&#39;Arial&#39;, &#39;I&#39;, 8)
+        self.set_y(-15)
+        
+        self.set_text_color(0, 0, 0)  # Text color: Black
+        self.cell(0, 10, f&#39;Page {self.page_no()}&#39;, 0, 0, &#39;R&#39;)
+
+    def chapter_body(self, body, image_path):
+        global y_after_his
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;History report of your Spendings&#34;, ln=True, align=&#39;C&#39;)
+        
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        y_position = self.get_y()
+        self.set_fill_color(169,204,227)
+        self.multi_cell(0, 10, body)
+        #print(y_text_pos,&#34;this is the y after text got inserted&#34;)
+        # Get the current Y position
+        
+        y_text_pos = self.get_y()
+        # Add the image (the .png image) on the right side of the history
+        self.image(image_path, x=100, y=y_position, w=100)
+        with Image.open(image_path) as img:
+            height=img.height
+        height = (height/300)*25.4
+        print(height,&#34;height of the history graph image&#34;)
+        print(y_position+height,y_text_pos)
+        if y_position+height&gt; y_text_pos:
+            y_after_his = y_position+height
+        else:
+            y_after_his = y_text_pos
+
+
+    
+
+
+    def chapter_displaybody(self, data, data_image):
+        
+        global max_height_lastImage
+        #header_height = 25
+        #footer_height = 15
+
+        y_position = y_after_his+20  # Store the initial Y position
+        #print(y_position)
+
+        self.set_y(y_position+20)
+        #print(self.get_y(),&#34;hello&#34;)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        self.multi_cell(0, 10, data[0])
+        y_position=self.get_y()
+        print(y_position,&#34;this is after the first data&#34;)
+        image_width=(self.w/2.2)
+        #image_start=0
+        
+        for image_path in data_image[:3]:
+            print(image_path)
+
+        with Image.open(data_image[0]) as img:
+            height1=img.height
+        
+        
+        with Image.open(data_image[1]) as img:
+            height2=img.height
+
+        
+        with Image.open(data_image[2]) as img:
+            height3=img.height
+
+        max_height=max(height1,height2)
+        max_height=(max_height / 300) * 25.4
+
+        height3 = (height3/300)*25.4
+        
+        self.set_y(self.get_y()+10)
+        #print(max_height, self.h-20-35-self.get_y(),&#34;first&#34;)
+        if max_height&gt; self.h-20-35-self.get_y():
+            #print(&#34;entered the if condition&#34;)
+            self.add_page()
+            y_position=35
+        
+        self.image(data_image[0], x=10, y=y_position, w=image_width) 
+        self.image(data_image[1], x=(image_width+10), y=y_position, w=image_width)
+
+        self.set_y(self.get_y()+max_height+30)
+
+        if height3 &gt; self.h-20-35-self.get_y():
+            self.add_page()
+            y_position=35
+        y_position=self.get_y()
+        self.image(data_image[2], x=10, y=y_position, w=100)
+        self.set_y(self.get_y()+max_height+35)
+        
+
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        self.multi_cell(0, 10, data[1])
+        y_position=self.get_y()
+        
+        with Image.open(data_image[3]) as img:
+            height1=img.height
+        
+        
+        with Image.open(data_image[4]) as img:
+            height2=img.height
+
+        
+        with Image.open(data_image[5]) as img:
+            height3=img.height
+
+        max_height=max(height1,height2)
+        max_height=(max_height / 300) * 25.4
+        height3 = (height3/300)*25.4
+
+        
+        self.set_y(self.get_y()+10)
+        #print(max_height,self.h-20-35-self.get_y(),&#34;second&#34;)
+        if max_height&gt; self.h-20-35-self.get_y():
+            #print(&#34;entered the if condition&#34;)
+            self.add_page()
+            y_position=35
+        
+        #print(self.get_y)
+        self.image(data_image[3], x=10, y=y_position, w=image_width) 
+        self.image(data_image[4], x=(image_width+10), y=y_position, w=image_width)
+
+        self.set_y(self.get_y()+max_height+30)
+
+        if height3 &gt; self.h-20-35-self.get_y():
+            self.add_page()
+            y_position=35
+        y_position=self.get_y()
+        self.image(data_image[5], x=10, y=y_position, w=100)
+
+        max_height_lastImage=max_height
+
+
+            
+    def chapter_estimatebody(self, data_day,data_month):
+        self.set_y(self.get_y()+max_height_lastImage+30)
+
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Estimation Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        y_position=self.get_y()
+        #print(data_day,data_month,&#34;this is chapter_estimateody&#34;)
+
+        self.multi_cell(0, 10, data_day[0])
+
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+        self.multi_cell(0, 10, data_month[0])
+
+    def chapter_asc_descbody(self,data_asc,data_desc):
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report in Ascending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+
+        self.multi_cell(0, 10, data_asc)
+
+
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report in Descending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+        self.multi_cell(0, 10, data_desc)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="summarize.PDF"><code class="flex name class">
+<span>class <span class="ident">PDF</span></span>
+<span>(</span><span>orientation='P', unit='mm', format='A4')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>PDF Generation class</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PDF(FPDF):
+    def header(self):
+        self.set_fill_color(169, 204, 227)  # Background color for the entire top part
+        self.rect(0, 0, 210, 25, &#39;DF&#39;)  # Draw a filled rectangle for the entire top part
+        self.set_font(&#39;Arial&#39;, &#39;B&#39;, 16)  # Larger font for the header
+        self.set_text_color(0, 0, 0)     # Text color: Black
+        self.cell(0, 20, &#39;Dollar Bot Summary Report&#39;, 0, 1, &#39;C&#39;, 1)   # Centered title in the header
+        #self.ln(15) 
+        # Add a dollar sign logo to the top right corner of the header
+        self.image(&#39;DollarBotLogo.png&#39;, 174, 0, 37)
+        
+        self.ln(20)  # Increase the space after the header
+
+    def footer(self):
+        self.set_font(&#39;Arial&#39;, &#39;I&#39;, 8)
+        self.set_y(-15)
+        
+        self.set_text_color(0, 0, 0)  # Text color: Black
+        self.cell(0, 10, f&#39;Page {self.page_no()}&#39;, 0, 0, &#39;R&#39;)
+
+    def chapter_body(self, body, image_path):
+        global y_after_his
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;History report of your Spendings&#34;, ln=True, align=&#39;C&#39;)
+        
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        y_position = self.get_y()
+        self.set_fill_color(169,204,227)
+        self.multi_cell(0, 10, body)
+        #print(y_text_pos,&#34;this is the y after text got inserted&#34;)
+        # Get the current Y position
+        
+        y_text_pos = self.get_y()
+        # Add the image (the .png image) on the right side of the history
+        self.image(image_path, x=100, y=y_position, w=100)
+        with Image.open(image_path) as img:
+            height=img.height
+        height = (height/300)*25.4
+        print(height,&#34;height of the history graph image&#34;)
+        print(y_position+height,y_text_pos)
+        if y_position+height&gt; y_text_pos:
+            y_after_his = y_position+height
+        else:
+            y_after_his = y_text_pos
+
+
+    
+
+
+    def chapter_displaybody(self, data, data_image):
+        
+        global max_height_lastImage
+        #header_height = 25
+        #footer_height = 15
+
+        y_position = y_after_his+20  # Store the initial Y position
+        #print(y_position)
+
+        self.set_y(y_position+20)
+        #print(self.get_y(),&#34;hello&#34;)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        self.multi_cell(0, 10, data[0])
+        y_position=self.get_y()
+        print(y_position,&#34;this is after the first data&#34;)
+        image_width=(self.w/2.2)
+        #image_start=0
+        
+        for image_path in data_image[:3]:
+            print(image_path)
+
+        with Image.open(data_image[0]) as img:
+            height1=img.height
+        
+        
+        with Image.open(data_image[1]) as img:
+            height2=img.height
+
+        
+        with Image.open(data_image[2]) as img:
+            height3=img.height
+
+        max_height=max(height1,height2)
+        max_height=(max_height / 300) * 25.4
+
+        height3 = (height3/300)*25.4
+        
+        self.set_y(self.get_y()+10)
+        #print(max_height, self.h-20-35-self.get_y(),&#34;first&#34;)
+        if max_height&gt; self.h-20-35-self.get_y():
+            #print(&#34;entered the if condition&#34;)
+            self.add_page()
+            y_position=35
+        
+        self.image(data_image[0], x=10, y=y_position, w=image_width) 
+        self.image(data_image[1], x=(image_width+10), y=y_position, w=image_width)
+
+        self.set_y(self.get_y()+max_height+30)
+
+        if height3 &gt; self.h-20-35-self.get_y():
+            self.add_page()
+            y_position=35
+        y_position=self.get_y()
+        self.image(data_image[2], x=10, y=y_position, w=100)
+        self.set_y(self.get_y()+max_height+35)
+        
+
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        self.multi_cell(0, 10, data[1])
+        y_position=self.get_y()
+        
+        with Image.open(data_image[3]) as img:
+            height1=img.height
+        
+        
+        with Image.open(data_image[4]) as img:
+            height2=img.height
+
+        
+        with Image.open(data_image[5]) as img:
+            height3=img.height
+
+        max_height=max(height1,height2)
+        max_height=(max_height / 300) * 25.4
+        height3 = (height3/300)*25.4
+
+        
+        self.set_y(self.get_y()+10)
+        #print(max_height,self.h-20-35-self.get_y(),&#34;second&#34;)
+        if max_height&gt; self.h-20-35-self.get_y():
+            #print(&#34;entered the if condition&#34;)
+            self.add_page()
+            y_position=35
+        
+        #print(self.get_y)
+        self.image(data_image[3], x=10, y=y_position, w=image_width) 
+        self.image(data_image[4], x=(image_width+10), y=y_position, w=image_width)
+
+        self.set_y(self.get_y()+max_height+30)
+
+        if height3 &gt; self.h-20-35-self.get_y():
+            self.add_page()
+            y_position=35
+        y_position=self.get_y()
+        self.image(data_image[5], x=10, y=y_position, w=100)
+
+        max_height_lastImage=max_height
+
+
+            
+    def chapter_estimatebody(self, data_day,data_month):
+        self.set_y(self.get_y()+max_height_lastImage+30)
+
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Estimation Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+        y_position=self.get_y()
+        #print(data_day,data_month,&#34;this is chapter_estimateody&#34;)
+
+        self.multi_cell(0, 10, data_day[0])
+
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+        self.multi_cell(0, 10, data_month[0])
+
+    def chapter_asc_descbody(self,data_asc,data_desc):
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report in Ascending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+
+        self.multi_cell(0, 10, data_asc)
+
+
+        self.set_y(self.get_y()+20)
+        self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+        self.set_text_color(0, 128, 0)  # Text color: Green
+        self.cell(0, 10, &#34;Spending Report in Descending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+        self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+        self.set_text_color(0, 0, 0)
+
+        self.multi_cell(0, 10, data_desc)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>fpdf.fpdf.FPDF</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="summarize.PDF.chapter_asc_descbody"><code class="name flex">
+<span>def <span class="ident">chapter_asc_descbody</span></span>(<span>self, data_asc, data_desc)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def chapter_asc_descbody(self,data_asc,data_desc):
+    self.set_y(self.get_y()+20)
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Spending Report in Ascending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+
+
+    self.multi_cell(0, 10, data_asc)
+
+
+    self.set_y(self.get_y()+20)
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Spending Report in Descending Order of Spent Amount&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+
+    self.multi_cell(0, 10, data_desc)</code></pre>
+</details>
+</dd>
+<dt id="summarize.PDF.chapter_body"><code class="name flex">
+<span>def <span class="ident">chapter_body</span></span>(<span>self, body, image_path)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def chapter_body(self, body, image_path):
+    global y_after_his
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;History report of your Spendings&#34;, ln=True, align=&#39;C&#39;)
+    
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+    y_position = self.get_y()
+    self.set_fill_color(169,204,227)
+    self.multi_cell(0, 10, body)
+    #print(y_text_pos,&#34;this is the y after text got inserted&#34;)
+    # Get the current Y position
+    
+    y_text_pos = self.get_y()
+    # Add the image (the .png image) on the right side of the history
+    self.image(image_path, x=100, y=y_position, w=100)
+    with Image.open(image_path) as img:
+        height=img.height
+    height = (height/300)*25.4
+    print(height,&#34;height of the history graph image&#34;)
+    print(y_position+height,y_text_pos)
+    if y_position+height&gt; y_text_pos:
+        y_after_his = y_position+height
+    else:
+        y_after_his = y_text_pos</code></pre>
+</details>
+</dd>
+<dt id="summarize.PDF.chapter_displaybody"><code class="name flex">
+<span>def <span class="ident">chapter_displaybody</span></span>(<span>self, data, data_image)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def chapter_displaybody(self, data, data_image):
+    
+    global max_height_lastImage
+    #header_height = 25
+    #footer_height = 15
+
+    y_position = y_after_his+20  # Store the initial Y position
+    #print(y_position)
+
+    self.set_y(y_position+20)
+    #print(self.get_y(),&#34;hello&#34;)
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Spending Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+    self.multi_cell(0, 10, data[0])
+    y_position=self.get_y()
+    print(y_position,&#34;this is after the first data&#34;)
+    image_width=(self.w/2.2)
+    #image_start=0
+    
+    for image_path in data_image[:3]:
+        print(image_path)
+
+    with Image.open(data_image[0]) as img:
+        height1=img.height
+    
+    
+    with Image.open(data_image[1]) as img:
+        height2=img.height
+
+    
+    with Image.open(data_image[2]) as img:
+        height3=img.height
+
+    max_height=max(height1,height2)
+    max_height=(max_height / 300) * 25.4
+
+    height3 = (height3/300)*25.4
+    
+    self.set_y(self.get_y()+10)
+    #print(max_height, self.h-20-35-self.get_y(),&#34;first&#34;)
+    if max_height&gt; self.h-20-35-self.get_y():
+        #print(&#34;entered the if condition&#34;)
+        self.add_page()
+        y_position=35
+    
+    self.image(data_image[0], x=10, y=y_position, w=image_width) 
+    self.image(data_image[1], x=(image_width+10), y=y_position, w=image_width)
+
+    self.set_y(self.get_y()+max_height+30)
+
+    if height3 &gt; self.h-20-35-self.get_y():
+        self.add_page()
+        y_position=35
+    y_position=self.get_y()
+    self.image(data_image[2], x=10, y=y_position, w=100)
+    self.set_y(self.get_y()+max_height+35)
+    
+
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+    self.multi_cell(0, 10, data[1])
+    y_position=self.get_y()
+    
+    with Image.open(data_image[3]) as img:
+        height1=img.height
+    
+    
+    with Image.open(data_image[4]) as img:
+        height2=img.height
+
+    
+    with Image.open(data_image[5]) as img:
+        height3=img.height
+
+    max_height=max(height1,height2)
+    max_height=(max_height / 300) * 25.4
+    height3 = (height3/300)*25.4
+
+    
+    self.set_y(self.get_y()+10)
+    #print(max_height,self.h-20-35-self.get_y(),&#34;second&#34;)
+    if max_height&gt; self.h-20-35-self.get_y():
+        #print(&#34;entered the if condition&#34;)
+        self.add_page()
+        y_position=35
+    
+    #print(self.get_y)
+    self.image(data_image[3], x=10, y=y_position, w=image_width) 
+    self.image(data_image[4], x=(image_width+10), y=y_position, w=image_width)
+
+    self.set_y(self.get_y()+max_height+30)
+
+    if height3 &gt; self.h-20-35-self.get_y():
+        self.add_page()
+        y_position=35
+    y_position=self.get_y()
+    self.image(data_image[5], x=10, y=y_position, w=100)
+
+    max_height_lastImage=max_height</code></pre>
+</details>
+</dd>
+<dt id="summarize.PDF.chapter_estimatebody"><code class="name flex">
+<span>def <span class="ident">chapter_estimatebody</span></span>(<span>self, data_day, data_month)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def chapter_estimatebody(self, data_day,data_month):
+    self.set_y(self.get_y()+max_height_lastImage+30)
+
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Estimation Report for the day&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+    y_position=self.get_y()
+    #print(data_day,data_month,&#34;this is chapter_estimateody&#34;)
+
+    self.multi_cell(0, 10, data_day[0])
+
+    self.set_y(self.get_y()+20)
+    self.set_font(&#39;Arial&#39;, &#39;BI&#39;, 12)  # Bold and italic
+    self.set_text_color(0, 128, 0)  # Text color: Green
+    self.cell(0, 10, &#34;Spending Report for the month&#34;, ln=True, align=&#39;C&#39;)
+
+    self.set_font(&#39;Arial&#39;, &#39;&#39;, 11)
+    self.set_text_color(0, 0, 0)
+
+    self.multi_cell(0, 10, data_month[0])</code></pre>
+</details>
+</dd>
+<dt id="summarize.PDF.footer"><code class="name flex">
+<span>def <span class="ident">footer</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Footer to be implemented in your own inherited class</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def footer(self):
+    self.set_font(&#39;Arial&#39;, &#39;I&#39;, 8)
+    self.set_y(-15)
+    
+    self.set_text_color(0, 0, 0)  # Text color: Black
+    self.cell(0, 10, f&#39;Page {self.page_no()}&#39;, 0, 0, &#39;R&#39;)</code></pre>
+</details>
+</dd>
+<dt id="summarize.PDF.header"><code class="name flex">
+<span>def <span class="ident">header</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Header to be implemented in your own inherited class</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def header(self):
+    self.set_fill_color(169, 204, 227)  # Background color for the entire top part
+    self.rect(0, 0, 210, 25, &#39;DF&#39;)  # Draw a filled rectangle for the entire top part
+    self.set_font(&#39;Arial&#39;, &#39;B&#39;, 16)  # Larger font for the header
+    self.set_text_color(0, 0, 0)     # Text color: Black
+    self.cell(0, 20, &#39;Dollar Bot Summary Report&#39;, 0, 1, &#39;C&#39;, 1)   # Centered title in the header
+    #self.ln(15) 
+    # Add a dollar sign logo to the top right corner of the header
+    self.image(&#39;DollarBotLogo.png&#39;, 174, 0, 37)
+    
+    self.ln(20)  # Increase the space after the header</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="summarize.PDF" href="#summarize.PDF">PDF</a></code></h4>
+<ul class="">
+<li><code><a title="summarize.PDF.chapter_asc_descbody" href="#summarize.PDF.chapter_asc_descbody">chapter_asc_descbody</a></code></li>
+<li><code><a title="summarize.PDF.chapter_body" href="#summarize.PDF.chapter_body">chapter_body</a></code></li>
+<li><code><a title="summarize.PDF.chapter_displaybody" href="#summarize.PDF.chapter_displaybody">chapter_displaybody</a></code></li>
+<li><code><a title="summarize.PDF.chapter_estimatebody" href="#summarize.PDF.chapter_estimatebody">chapter_estimatebody</a></code></li>
+<li><code><a title="summarize.PDF.footer" href="#summarize.PDF.footer">footer</a></code></li>
+<li><code><a title="summarize.PDF.header" href="#summarize.PDF.header">header</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
