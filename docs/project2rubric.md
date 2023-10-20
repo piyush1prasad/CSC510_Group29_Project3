@@ -96,7 +96,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your software released under an open source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
 |Is your software released under an OSI-approved open-source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
 |Does each of your source code files include a licence header?|N/A||
-|Do you have a recommended citation for your software?|No||
+|Do you have a recommended citation for your software?|Yes||
 |Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?|No||
 |Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|No||
 |Do you make timely announcements of the deprecation of components, APIs, etc.?|Yes||
