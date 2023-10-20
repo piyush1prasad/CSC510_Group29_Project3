@@ -56,7 +56,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your software’s architecture and design modular?|Yes| [Github](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main)|
 |Does your software use an accepted coding standard or convention?|Yes||
 |Does your software allow data to be imported and exported using open data formats?|Yes|
-|Does your software allow communications using open communications protocols?|
+|Does your software allow communications using open communications protocols?|No||
 |Is your software cross-platform compatible?|Yes||
 |Does your software adhere to appropriate accessibility conventions or standards?|Yes||
 |Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
@@ -66,7 +66,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully)|Yes||
 |Do you back-up your repository?|Yes||
 |Do you provide publicly-available instructions for building your software from the source code?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#installation-guide)|
-|Can you build, or package, your software using an automated tool?|||
+|Can you build, or package, your software using an automated tool?|Yes||
 |Do you provide publicly-available instructions for deploying your software?|Yes||
 |Does your documentation list all third-party dependencies?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/requirements.txt)|
 |Does your documentation list the version number for all third-party dependencies?|Yes||
