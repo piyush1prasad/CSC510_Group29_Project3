@@ -118,6 +118,7 @@ coverage report
 
 1. While running the project an error may arise stating fpdf  Module not found eventhough it is installed in such case uninstall fpdf using pip uninstall fpdf upgrade pip and install using the provided command pip.
 2. While running the test cases if an error arrises then run pytest command to run the testcases.
+In case of any extended support or quieries please reach us at seproject46@gmail.com
 
 ## Notes:
 You can download and install the Telegram desktop application for your system from the following site: https://desktop.telegram.org/
