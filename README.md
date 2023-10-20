@@ -73,6 +73,7 @@ The below instructions can be followed in order to set-up this bot at your end i
 
 2. Start a terminal session in the directory where the project has been cloned. Run the following command to install the required dependencies:
 ```
+  python3 -m pip install fpdf
   pip install -r requirements.txt
 ```
 
