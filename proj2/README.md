@@ -16,8 +16,6 @@ This video shows only the new features and enhancement of some older features. A
 [![GitHub contributors](https://img.shields.io/github/contributors/21Tulasi/MyDollarBot-newPhase)](https://github.com/21Tulasi/MyDollarBot-newPhase/graphs/contributors)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10023243.svg)]((https://zenodo.org/doi/10.5281/zenodo.10023242))
 [![Build Status](https://app.travis-ci.com/sak007/MyDollarBot-BOTGo.svg?branch=main)](https://app.travis-ci.com/github/sak007/MyDollarBot-BOTGo)
-[![CI](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/main.yml/badge.svg)](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/main.yml)
-[![Lint Python](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/black.yml/badge.svg)](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/black.yml)
 [![codecov](https://codecov.io/gh/sak007/MyDollarBot-BOTGo/branch/main/graph/badge.svg?token=5AYMR8MNMP)](https://codecov.io/gh/sak007/MyDollarBot-BOTGo)
 [![GitHub issues](https://img.shields.io/github/issues/prithvish-doshi-17/MyDollarBot-BOTGo)](https://github.com/prithvish-doshi-17/MyDollarBot-BOTGo/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/prithvish-doshi-17/MyDollarBot-BOTGo)](https://github.com/prithvish-doshi-17/MyDollarBot-BOTGo/issues?q=is%3Aissue+is%3Aclosed)
@@ -127,3 +125,4 @@ You can download and install the Telegram desktop application for your system fr
 <p>Authors(Iteration 3):'Vraj, Alex, Leo, Prithvish, Seeya'</p>
 <p>Authors(Iteration 2):'Athithya, Subramanian, Ashok, Zunaid, Rithik'</p>
 <p>Authors(Iteration 1):'Dev, Prakruthi, Radhika, Rohan, Sunidhi'</p>
+

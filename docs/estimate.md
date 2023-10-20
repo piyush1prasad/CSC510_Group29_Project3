@@ -20,25 +20,7 @@ Takes 2 arguments for processing - **queryResult** which is the query result fro
 
 # How to run this feature?
 
-```
-$: python code/code.py
 
-$: /start
 
-$: /estimate
-
-Please select the period to estimate:
-$: Next day
-
-Hold on! Calculating...
-
-Here are your estimated spendings for the next day:
-CATEGORIES,AMOUNT 
-----------------------
-Food $200.0
-Groceries $100.0
-```
-
-![alt text](https://github.com/sak007/MyDollarBot-BOTGo/blob/estimate-feature/docs/estimate.png)
-
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/62d67f02-6079-4521-902f-6d8a1471e7e6
 

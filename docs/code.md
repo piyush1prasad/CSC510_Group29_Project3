@@ -16,23 +16,29 @@ Takes 1 argument **user_requests** and logs all user interaction with the bot in
 3. start_and_menu_command(m):
 Prints out the the main menu displaying the features that the bot offers and the corresponding commands to be run from the Telegram UI to use these features. Commands used to run this: commands=['start', 'menu']
 
-4. command_add(message)
+4. exit_command(message):
+Exits from MyDollar bot and displays menu option. Commands used to run this: commands=['exit']
+
+6. command_add(message)
 Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls add.py to run to execute the add functionality. Commands used to run this: commands=['add']
 
-5. command_add_recurring(message)
+7. command_add_recurring(message)
 Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls add_recurring.py to run to execute the functionality. Commands used to run this: commands=['add_recurring']
 
-6. command_history(message):
+8. command_history(message):
 Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls history.py to run to execute the add functionality. Commands used to run this: commands=['history']
 
-7. command_edit(message):
+9. command_edit(message):
 Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls edit.py to run to execute the add functionality. Commands used to run this: commands=['edit']
 
-8. command_display(message):
+10. command_display(message):
 Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls display.py to run to execute the add functionality. Commands used to run this: commands=['display']
 
-9. command_delete(message):
-Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls delete.py to run to execute the add functionality. Commands used to run this: commands=['display']
+11. command_delete(message):
+Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then calls delete.py to run to execute the add functionality. Commands used to run this: commands=['delete']
+
+12. default_command(message):
+Takes 1 argument **message** which contains the message from the user along with the chat ID of the user chat. It then displays a prompt message to select option only from the menu.
 
 # How to run this feature?
 This file contains information on the main code.py file from where all features are run. Instructions to run this are the same as instructions to run the project and can be found in README.md.

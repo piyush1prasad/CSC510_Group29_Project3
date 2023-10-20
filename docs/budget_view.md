@@ -18,3 +18,7 @@ It takes 2 arguments for processing - **message** which is the message from the 
 
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /budget into the telegram bot. Create a budget, and then type /budget again, and choose the option to view your budget.
+
+
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/62616ea7-37d3-481b-8860-b525603cd361
+

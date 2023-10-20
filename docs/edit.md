@@ -28,6 +28,8 @@ It takes 2 arguments for processing - **message** which is the message from the 
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the   edit3(m, bot):: function in the same file. It takes care of category change and edits.
 
 # How to run this feature?
-Sri Athithya Kruth, [20.10.21 20:33]
-/edit
-(WORK IN PROGRESS)
+
+
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/4aaecfcf-1870-4c3d-944b-ac31238618f1
+
+

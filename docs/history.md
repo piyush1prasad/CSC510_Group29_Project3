@@ -13,27 +13,8 @@ This is the main function used to implement the delete feature. It takes 2 argum
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /add into the telegram bot.
 
-Below you can see an example in text format:
 
-Vraj Chokshi, [23.11.21 20:33]
-/display
 
-Vraj Chokshi, [23.11.21 20:33]
-Month
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/d9af8a29-4681-4375-949d-e81ee4dbdd2f
 
-mydollarbot20102021, [23.11.21 20:33]
-Hold on! Calculating...
 
-Vraj Chokshi, [23.11.21 20:53]
-/history
-
-mydollarbot20102021, [23.11.21 20:53]
-Here is your spending history : 
-DATE, CATEGORY, AMOUNT
-----------------------
-01-Dec-2021,Transport,100.0
-23-Nov-2021 15:13,Groceries,500.0
-
-Along with the spending history, the histogram displaying spending of each month is plotted, which can help user to manage his/her expenses.
-
-![Test Image ](https://github.com/prithvish-doshi-17/MyDollarBot-BOTGo/blob/main/histo.png)
