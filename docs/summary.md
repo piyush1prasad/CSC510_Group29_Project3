@@ -11,3 +11,7 @@ The code that implements this feature can be found [here](https://github.com/21T
 
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /summary into the telegram bot.
+
+
+https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/964a9101-6369-4d2e-87ea-cc322fae5810
+
