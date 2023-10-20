@@ -23,31 +23,31 @@ It checks if there is an existing budget through the helper module's isOverallBu
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot. This function takes over from the update_overall_budget, and asks the user to enter the new/updated budget amount. 
 As long as the user doesnot Cancel the action and this amount is not zero(in which case it throws an exception), it continues processing. It reads the current user data through helper module's read_json function and if the amount added as budget is more than the amount added as income prompts an alert message to the user alongwith prompting to continue with same budget or re-enter a new budget and then passes control to the post__selection function, else if the amount added as budget is less than the amount added as income adds the new budget information onto it, writing back with the helper module's write_json function.
 
-6. post__selection(message, bot, amount_val):
+5. post__selection(message, bot, amount_val):
 It takes 3 arguments for processing - **message** which is the option selected by the user, **bot** which is the telegram bot and **amount_val** which is the amount entered as budget. If the option selected by the user is Yes continues with same budget by adding the new budget information onto it, writing back with the helper module's write_json function. Else asks the user to re-enter the new/updated budget amount.
 
-7. update_category_budget(message, bot):
+6. update_category_budget(message, bot):
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object. This function is called in case the user decides to choose category-wise budgest in the run or post_type_selection stages. 
 It gets the spend categories from the helper module's getSpendCategories and displays them to the user. It then passes control on to the post_category_selection function.
 
-8. post_category_selection(message, bot):
+7. post_category_selection(message, bot):
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object. Based on the category chosen by the user, the bot checks if these are part of the pre-defined categories in helper.getSpendCategories(), else it throws an exception. 
-If there is a budget already existing for the category, it identifies this case through helper.isCategoryBudgetByCategoryAvailable and shares this information with the user. If not, it simply proceeds. In either case, it then asks for the new/updated budget amount. It passes control onto post_category_amount_input.
+If the user doesnot cancel the operation and if there is a budget already existing for the category, it identifies this case through helper.isCategoryBudgetByCategoryAvailable and shares this information with the user. If not, it simply proceeds. In either case, it then asks for the new/updated budget amount. It passes control onto post_category_amount_input.
 
-9. post_category_amount_input(message, bot, category):
-It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object, and the category chosen by the user. 
+8. post_category_amount_input(message, bot, category):
+It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object, and the category chosen by the user.
+It gets the amount entered by the user and if the amount added as budget alongwith all the categories budget amount sum is more than the amount added as income prompts an alert message to the user alongwith prompting to continue with same budget or re-enter a new budget and then passes control to the post_yesno_selection function, else if the amount added as budget alongwith all the categories budget amount sum is less than the amount added as income amount is validated. As long as this amount is not zero(in which case it throws an exception), it continues processing. It reads the current user data through helper module's read_json function and adds the new budget information onto it, writing back with the helper module's write_json function. It passes control to post_category_add.
 
-It gets the amount entered by the user and validates it. As long as this amount is not zero(in which case it throws an exception), it continues processing. It reads the current user data through helper module's read_json function and adds the new budget information onto it, writing back with the helper module's write_json function. It passes control to post_category_add.
-
-10. post_category_add(message, bot):
+9. post_category_add(message, bot):
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object. This exists in case the user wants to add a category-wise budget to another category after adding it for one category. It prompts the user to choose an option from  helper.getUpdateOptions().values() and passes control to post_option_selection to either continue or exit the add/update feature.
 
-11. post_option_selection(message, bot):
+10. post_option_selection(message, bot):
 It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object.
 It takes the category chosen by the user from the message object. If the message is "continue", then it runs update_category_budget (above) allowing the user to get into the add/update process again.
 Otherwise, it exits the feature.
 
-12. post_yesno_selection(message, bot, amount_val, category):
+11. post_yesno_selection(message, bot, amount_val, category):
+It takes 3 arguments for processing - **message** which is the option selected by the user, **bot** which is the telegram bot and **amount_val** which is the amount entered as budget. If the option selected by the user is Yes continues with same budget by adding the new budget information onto it, writing back with the helper module's write_json function. Else asks the user to re-enter the new/updated budget amount.
 
 # How to run this feature?
 Once the project is running(please follow the instructions given in the main README.md for this), please type /budget into the telegram bot. Please follow the prompts on the screen to create a new budget.
