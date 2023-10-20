@@ -1,4 +1,4 @@
-# Contributing to TrackMyDollar - BudgetOnTheGo - BOTGo v2
+# Contributing to TrackMyDollar - BudgetOnTheGo - BOTGo v4
 
 Follow the set of guidelines below to contribute to MyDollarBot-BOTGo!
 
