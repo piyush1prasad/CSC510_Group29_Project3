@@ -1,3 +1,4 @@
+#Copyright (c) 2021 Dev Kumar
 import helper # Import the helper module for utility functions
 import logging # Import the logging module for error handling
 from telebot import types # Import types module from the telebot library for user interface
