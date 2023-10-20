@@ -1,6 +1,6 @@
 # About MyDollarBot's /category Feature
 This feature enables the user to manage their categories.
-Currently we have the following expense categories set by default:
+Currently we have the following expense categories set by default and Cancel option:
 
 - Food
 - Groceries
@@ -21,7 +21,7 @@ The code that implements this feature can be found [here](https://github.com/21T
 This is the main function used to implement the category feature. It pop ups a menu on the bot asking the user to choose their operation, after which operation is given to post_operation_selection(message, bot) for further proccessing. It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the main code.py function.
 
 2. post_operation_selection(message, bot):
- It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the run(message, bot): function in the category.py file. It requests the user to choose an operation from Add/Delete/Show categories and then passes control to category_add(message, bot), category_delete(message, bot), category_view(message, bot) for further processing depends on user's choose.
+ It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the run(message, bot): function in the category.py file. It requests the user to choose an operation from Add/Delete/Show categories and then passes control to category_add(message, bot), category_delete(message, bot), category_view(message, bot) for further processing depends on user's choose if the user doesnot Cancel the operation.
 
 3. category_add(message, bot):
  It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the post_operation_selection(message, bot): function in the category.py file. It takes the new category name entered by the user, and then write it in the file categories.txt.
