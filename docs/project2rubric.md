@@ -89,3 +89,14 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
 |Do you have a contributions policy?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
 |Is your contributions' policy publicly available?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
+|Do contributors keep the copyright/IP of their contributions?|Yes||
+|Does your website and documentation clearly state the copyright owners of your software and documentation?|Yes||
+|Does each of your source code files include a copyright statement?|No||
+|Does your website and documentation clearly state the licence of your software?|No||
+|Is your software released under an open source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
+|Is your software released under an OSI-approved open-source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
+|Does each of your source code files include a licence header?|N/A||
+|Do you have a recommended citation for your software?|No||
+|Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?|No||
+|Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|No||
+|Do you make timely announcements of the deprecation of components, APIs, etc.?|Yes||
