@@ -60,3 +60,4 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your software cross-platform compatible?|Yes||
 |Does your software adhere to appropriate accessibility conventions or standards?|Yes||
 |Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
+|Is your source code stored in a repository under revision control?|Yes||
