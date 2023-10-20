@@ -56,7 +56,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your software’s architecture and design modular?|Yes| [Github](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main)|
 |Does your software use an accepted coding standard or convention?|Yes||
 |Does your software allow data to be imported and exported using open data formats?|Yes|
-|Does your software allow communications using open communications protocols?|No||
+|Does your software allow communications using open communications protocols?|Yes||
 |Is your software cross-platform compatible?|Yes||
 |Does your software adhere to appropriate accessibility conventions or standards?|Yes||
 |Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
