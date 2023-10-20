@@ -91,7 +91,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your contributions' policy publicly available?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
 |Do contributors keep the copyright/IP of their contributions?|Yes||
 |Does your website and documentation clearly state the copyright owners of your software and documentation?|Yes||
-|Does each of your source code files include a copyright statement?|No||
+|Does each of your source code files include a copyright statement?|Yes||
 |Does your website and documentation clearly state the licence of your software?|No||
 |Is your software released under an open source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
 |Is your software released under an OSI-approved open-source licence?|Yes|[License](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/LICENSE)|
