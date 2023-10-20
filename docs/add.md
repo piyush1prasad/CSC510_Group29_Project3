@@ -1,6 +1,6 @@
 # About MyDollarBot's /add Feature
 This feature enables the user to add a new expense to their expense tracker.
-Currently we have the following expense categories set by default:
+Currently we have the following expense categories set by default and Cancel option:
 
 - Food
 - Groceries
