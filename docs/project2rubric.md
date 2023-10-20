@@ -22,7 +22,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Test cases exist|3| Test cases added. Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/test)|
 |Test cases are routinely executed|3| please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#testing)|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|3| Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
-|Issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here|
+|Issues are discussed before they are closed|3|Each issue is assigned to an individual and is closed only after verification [evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/issues)|
 |Chat channel: exists|3|[Whatsapp](https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/659beadd-d210-4fd6-9658-84f6d42d9707)|
 |Test cases: a large proportion of the issues related to handling failing cases.|If a test case fails, open an issue and fix it|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3| Entire project is developed in Python, and is being run using shell script
