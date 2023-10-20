@@ -44,7 +44,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software?|Yes| |
 |Do you provide a comprehensive guide to all your software’s commands, functions and options?|Yes|[Documentation](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
 |Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?|Yes|Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
-|If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?|
+|If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?|N/A||
 |Do you store your documentation under revision control with your source code?| Yes | [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/code)|
 |Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?| Yes| [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md#whats-new-from-phase-3-to-phase-4) |
 |Does your software describe how a user can get help with using your software?|Yes |Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#troubleshoot)|
@@ -63,5 +63,29 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Is your source code stored in a repository under revision control?|Yes||
 |Is each source code release a snapshot of the repository?|Yes||
 |Are releases tagged in the repository?|Yes||
-|Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully)|
-|Do you back-up your repository?|
+|Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully)|Yes||
+|Do you back-up your repository?|Yes||
+|Do you provide publicly-available instructions for building your software from the source code?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#installation-guide)|
+|Can you build, or package, your software using an automated tool?|||
+|Do you provide publicly-available instructions for deploying your software?|Yes||
+|Does your documentation list all third-party dependencies?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/requirements.txt)|
+|Does your documentation list the version number for all third-party dependencies?|Yes||
+|Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional?|N/A||
+|Can you download dependencies using a dependency management tool or package manager?|N/A||
+|Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful?|Yes||
+|Do you have an automated test suite for your software?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/test)|
+| Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code?|N/A||
+|Do you use continuous integration, automatically running tests whenever changes are made to your source code?|N/A||
+|Are your test results publicly visible?|Yes||
+|Are all manually-run tests documented?|N/A||
+|Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software?|No||
+|Does your website state how many projects and users are associated with your project?|Yes||
+|Do you provide success stories on your website?|Yes||
+|Do you list your important partners and collaborators on your website?|No||
+|Do you list your project's publications on your website or link to a resource where these are available?|No||
+|Do you list third-party publications that refer to your software on your website or link to a resource where these are available?|No||
+|Can users subscribe to notifications to changes to your source code repository?|No||
+| If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model?|N/A||
+|Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
+|Do you have a contributions policy?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
+|Is your contributions' policy publicly available?|Yes|[Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
