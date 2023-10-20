@@ -61,3 +61,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Does your software adhere to appropriate accessibility conventions or standards?|Yes||
 |Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
 |Is your source code stored in a repository under revision control?|Yes||
+|Is each source code release a snapshot of the repository?|Yes||
+|Are releases tagged in the repository?|Yes||
+|Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully)|
+|Do you back-up your repository?|
