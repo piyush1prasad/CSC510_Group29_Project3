@@ -4,7 +4,7 @@
 |Video|3|Evidence in [Video](https://www.youtube.com/watch?v=oKYiTNTCPbo)|
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
 but nevertheless, here is a track record that everyone is contributing a lot)|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/graphs/contributors)|
-|Number of commits|3|in GH|
+|Number of commits|3|evidence in GH|
 |Number of commits: by different people|in GH|
 |Issues reports: there are **many**|
 |Issues are being closed|evidence in GH|
