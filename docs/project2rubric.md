@@ -19,7 +19,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Use of code formatters. |3|Used Pylint. [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/pylintrc)|
 |Use of syntax checkers. |3| Used Pylint. [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/pylintrc)|
 |Use of code coverage |3| main.yml file is used. [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/.github/workflows/main.yml)|
-|Other automated analysis tools|3|Github Actions, Pylint|
+|Other automated analysis tools|3|Github Actions [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/actions) |
 |Test cases exist|3| Test cases added. Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/test)|
 |Test cases are routinely executed|3| please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#testing)|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|3| Please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/CONTRIBUTING.md)|
