@@ -1,6 +1,6 @@
 # About MyDollarBot's /add_recurring Feature
 This feature enables the user to add a new expense to their expense tracker.
-Currently we have the following expense categories set by default:
+Currently we have the following expense categories set by default and Cancel option:
 
 - Food
 - Groceries
@@ -21,13 +21,13 @@ The code that implements this feature can be found [here](https://github.com/21T
 This is the main function used to implement the add feature. It pop ups a menu on the bot asking the user to choose their expense category, after which control is given to post_category_selection(message, bot) for further proccessing. It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the main code.py function.
 
 2. post_category_selection(message, bot):
- It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the run(message, bot): function in the add_recurring.py file. It requests the user to enter the amount they have spent on the expense category chosen and then passes control to post_amount_input(message, bot): for further processing.
+ It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the run(message, bot): function in the add_recurring.py file. It requests the user to enter the amount they have spent on the expense category chosen and then passes control to post_amount_input(message, bot): for further processing only if the user doesnot Cancel the operation.
 
 3. post_amount_input(message, bot):
- It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the post_category_selection(message, bot): function in the add_recurring.py file. It takes the amount entered by the user, validates it with helper.validate() and then calls post_duration(message, bot): for further processing.
+ It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the post_category_selection(message, bot): function in the add_recurring.py file. If the operation is not cancelled it takes the amount entered by the user, validates it with helper.validate() and then calls post_duration(message, bot): for further processing.
 
 4. post_duration(message, bot):
- It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the post_amount_input(message, bot): function in the add_recurring.py file. It takes the duration entered by the user, validates it with helper.validate() and then calls add_user_record to store it.
+ It takes 2 arguments for processing - **message** which is the message from the user, and **bot** which is the telegram bot object from the post_amount_input(message, bot): function in the add_recurring.py file. If the operation is not cancelled it takes the duration entered by the user, validates it with helper.validate() and then calls add_user_record to store it.
 
 5. add_user_record(chat_id, record_to_be_added):
  Takes 2 arguments - **chat_id** or the chat_id of the user's chat, and **record_to_be_added** which is the expense record to be added to the store. It then stores this expense record in the store.
