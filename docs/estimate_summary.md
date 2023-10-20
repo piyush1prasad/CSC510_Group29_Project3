@@ -4,7 +4,7 @@ month. It handles errors, provides clear responses, and tracks data availability
 Overall, it enhances the chatbot's functionality by allowing users to estimate spending.
 
 # Location of Code for this Feature
-The code that implements this feature can be found [here]https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/estimate_summary.py
+The code that implements this feature can be found [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/code/estimate_summary.py)
 
 # Code Description
 ## Functions
