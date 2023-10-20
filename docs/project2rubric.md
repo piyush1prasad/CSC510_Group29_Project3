@@ -4,17 +4,17 @@
 |Video|3|Evidence in [Video](https://www.youtube.com/watch?v=oKYiTNTCPbo)|
 |Workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
 but nevertheless, here is a track record that everyone is contributing a lot)|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/graphs/contributors)|
-|Number of commits|3|evidence in GH|
-|Number of commits: by different people|in GH|
+|Number of commits|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/pulse)|
+|Number of commits: by different people|3|evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/pulse)|
 |Issues reports: there are **many**|
 |Issues are being closed|evidence in GH|
-|DOI badge: exists|in GH|
+|DOI badge: exists|3|Eveidence in [README.md](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
 |Docs: doco generated, format not ugly |in GH|
-|Docs: what: point descriptions of each class/function (in isolation) |
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|
-|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|
-|Use of version control tools|
+|Docs: what: point descriptions of each class/function (in isolation)|3|Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3|Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/docs)|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|Eveidence in [README.md](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|Eveidence in [README.md](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/README.md)|
+|Use of version control tools|3|[Github](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/)|
 |Use of style checkers |config files in GH showing your config|
 |Use of code formatters. |config files in GH showing your this formatter's  config|
 |Use of syntax checkers. |config files iin  GH showing this checker's config  |
