@@ -15,9 +15,9 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|Eveidence in [README.md](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md)|
 |Use of version control tools|3|[Github](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/)|
 |Use of style checkers |3| Used Pylint. [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/pylintrc)|
-|Use of code formatters. |config files in GH showing your this formatter's  config|
+|Use of code formatters. |3|Used Pylint. [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/pylintrc)|
 |Use of syntax checkers. |3| Used Pylint. [Evidence](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/pylintrc)|
-|Use of code coverage |config files in GH|
+|Use of code coverage |3| main.yml file is used. [Link](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/.github/workflows/main.yml)|
 |Other automated analysis tools|config files in GH|
 |Test cases exist|3| Test cases added. Evidence is [here](https://github.com/21Tulasi/MyDollarBot-newPhase/tree/main/test)|
 |Test cases are routinely executed|3| please see [here](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/proj2/README.md#testing)|
