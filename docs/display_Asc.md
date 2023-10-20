@@ -1,4 +1,4 @@
-# About MyDollarBot's /display_Asc Feature
+# About MyDollarBot's display_Asc.py File
 This feature enables the users to view their spendings in a sorted order based on the spend amount.
 Both Ascending and Descending Orders of user's spendings are displayed in the 
 spending_history_beautified.pdf
