@@ -18,7 +18,7 @@ This video shows only the new features and enhancement of some older features. A
 [![Build Status](https://app.travis-ci.com/sak007/MyDollarBot-BOTGo.svg?branch=main)](https://app.travis-ci.com/github/sak007/MyDollarBot-BOTGo)
 [![CI](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/main.yml/badge.svg)](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/main.yml)
 [![Lint Python](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/black.yml/badge.svg)](https://github.com/21Tulasi/MyDollarBot-newPhase/actions/workflows/black.yml)
-[![codecov](https://codecov.io/gh/sak007/MyDollarBot-BOTGo/branch/main/graph/badge.svg?token=5AYMR8MNMP)](https://codecov.io/gh/sak007/MyDollarBot-BOTGo)
+![Code Coverage](https://github.com/21Tulasi/MyDollarBot-newPhase/blob/main/coverage.svg)
 [![GitHub issues](https://img.shields.io/github/issues/21Tulasi/MyDollarBot-newPhase)](https://github.com/21Tulasi/MyDollarBot-newPhase/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/21Tulasi/MyDollarBot-newPhase)](https://github.com/21Tulasi/MyDollarBot-newPhase/issues?q=is%3Aissue+is%3Aclosed)
 
