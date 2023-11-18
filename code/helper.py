@@ -76,7 +76,8 @@ timeFormat = '%H:%M'
 monthFormat = '%b-%Y'
 
 # Currency rates
-currency_rates = {}
+user_currency_type = dict()
+currency_rates = dict()
 currency_types = [
     'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN',
     'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL',
@@ -119,6 +120,18 @@ def write_json(user_list):
             json.dump(user_list, json_file, ensure_ascii=False, indent=4)
     except FileNotFoundError:
         print('Sorry, the data file could not be found.')
+
+
+def setUserCurr(chat_id):
+    user_list = read_json()
+    user_currency_type[str(chat_id)]['curr_type'] = user_list[str(chat_id)]['curr_type']
+
+
+def getUserCurr(chat_id):
+    if not user_currency_type[str(chat_id)]:
+        user_list = read_json()
+        user_currency_type[str(chat_id)]['curr_type'] = user_list[str(chat_id)]['curr_type']
+    return user_currency_type[str(chat_id)]['curr_type']
 
 
 def getCurrencyType():
