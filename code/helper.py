@@ -2,6 +2,7 @@
 import re
 import json
 import os
+import requests
 from datetime import datetime
 
 choices = ['Date', 'Category', 'Cost']
@@ -72,6 +73,9 @@ dateFormat = '%d-%b-%Y'
 timeFormat = '%H:%M'
 monthFormat = '%b-%Y'
 
+# Currency rates
+currency_rates = {}
+
 
 # function to load .json expense record data
 def read_json():
@@ -95,6 +99,20 @@ def write_json(user_list):
             json.dump(user_list, json_file, ensure_ascii=False, indent=4)
     except FileNotFoundError:
         print('Sorry, the data file could not be found.')
+
+
+def setCurrencyRates(url):
+    global currency_rates
+    data = requests.get(url).json()
+    # Extracting only the rates from the json data
+    currency_rates = data["rates"]
+
+
+def convertCurrency(fromCurrency, toCurrency, amount):
+    if fromCurrency != 'EUR':
+        amount = amount / currency_rates[fromCurrency]
+    amount = round(amount * currency_rates[toCurrency], 2)
+    return amount
 
 
 def validate_entered_amount(amount_entered):
@@ -148,6 +166,7 @@ def getOverallBudget(chatId):
         return None
     return data['budget']['overall']
 
+
 def getTotalIncome(chatId):
     data = getUserData(chatId)
     if data is None:
@@ -179,6 +198,7 @@ def isOverallBudgetAvailable(chatId):
 
 def isTotalIncomeAvailable(chatId):
     return getTotalIncome(chatId) is not None 
+
 
 def isCategoryBudgetAvailable(chatId):
     return getCategoryBudget(chatId) is not None
@@ -263,8 +283,10 @@ def getSpendCategories():
         spend_categories = tf.read().split(',')
     return spend_categories
 
+
 def getplot():
     return plot
+
 
 def getSpendDisplayOptions():
     return spend_display_option
@@ -305,8 +327,10 @@ def getBudgetTypes():
 def getUpdateOptions():
     return update_options
 
+
 def getYesNoOptions():
     return yes_or_no
+
 
 def getCategoryOptions():
     return category_options
