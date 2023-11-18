@@ -11,6 +11,7 @@ import display
 import estimate
 import delete
 import add
+import add_in_calendar
 import budget
 import category
 import income
@@ -86,6 +87,9 @@ def exit_command(m):
 def command_add(message):
     add.run(message, bot)
 
+@bot.message_handler(commands=['add_in_calendar'])
+def command_add_in_calendar(message):
+    add_in_calendar.run(message, bot)
 
 # Handle the /add_recurring command to add recurring expenses
 @bot.message_handler(commands=['add_recurring'])
