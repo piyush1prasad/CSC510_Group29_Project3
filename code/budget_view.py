@@ -24,7 +24,7 @@ def run(message, bot):
 def display_overall_budget(message, bot):
     chat_id = message.chat.id
     data = helper.getOverallBudget(chat_id)
-    bot.send_message(chat_id, 'Overall Budget: $' + data)
+    bot.send_message(chat_id, 'Overall Budget: ' + helper.getUserCurr(chat_id) + ' ' + data)
 
 # Function to display the category budget
 def display_category_budget(message, bot):
@@ -32,5 +32,5 @@ def display_category_budget(message, bot):
     data = helper.getCategoryBudget(chat_id)
     res = "Budget Summary\n"
     for c, v in data.items():
-        res = res + c + ": $" + v + "\n"
+        res = res + c + ": " + helper.getUserCurr(chat_id) + ' ' + v + "\n"
     bot.send_message(chat_id, res)

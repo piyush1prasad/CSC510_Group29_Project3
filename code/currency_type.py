@@ -50,10 +50,7 @@ def post_category_selection(message, bot):
                     for expense in user_list[str(chat_id)]['data']:
                         amount = expense.split(",")[-1]
                         updatedAmount = helper.convertCurrency(fromCurrency, selected_category, amount)
-                        # print(amount, updatedAmount)
-                        # expense.replace(amount, updatedAmount)
                         updatedData.append(','.join(expense.split(',')[:-1])+','+updatedAmount)
-                        print(updatedData)
                     user_list[str(chat_id)]['data'] = updatedData
                 if user_list[str(chat_id)]['income']:
                     user_list[str(chat_id)]['income'] = helper.convertCurrency(fromCurrency, selected_category, user_list[str(chat_id)]['income'])
@@ -63,6 +60,7 @@ def post_category_selection(message, bot):
                     for key in user_list[str(chat_id)]['budget']['category']:
                         user_list[str(chat_id)]['budget']['category'][key] = helper.convertCurrency(fromCurrency, selected_category, user_list[str(chat_id)]['budget']['category'][key])
                 helper.write_json(user_list)
+                helper.setUserCurr(chat_id)
                 bot.send_message(chat_id, 'Currency Type Updated to '+selected_category+' from '+fromCurrency)
             else:
                 bot.send_message(chat_id, 'Currency Type select is same as before: '+selected_category)
