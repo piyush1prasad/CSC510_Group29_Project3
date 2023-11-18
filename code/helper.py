@@ -124,14 +124,14 @@ def write_json(user_list):
 
 def setUserCurr(chat_id):
     user_list = read_json()
-    user_currency_type[str(chat_id)]['curr_type'] = user_list[str(chat_id)]['curr_type']
+    user_currency_type[str(chat_id)] = user_list[str(chat_id)]['curr_type']
 
 
 def getUserCurr(chat_id):
-    if not user_currency_type[str(chat_id)]:
+    if str(chat_id) not in user_currency_type.keys():
         user_list = read_json()
-        user_currency_type[str(chat_id)]['curr_type'] = user_list[str(chat_id)]['curr_type']
-    return user_currency_type[str(chat_id)]['curr_type']
+        user_currency_type[str(chat_id)] = user_list[str(chat_id)]['curr_type']
+    return user_currency_type[str(chat_id)]
 
 
 def getCurrencyType():
@@ -265,9 +265,9 @@ def display_remaining_overall_budget(message, bot):
     remaining_budget = calculateRemainingOverallBudget(chat_id)
     print("here", remaining_budget)
     if remaining_budget >= 0:
-        msg = '\nRemaining Overall Budget is $' + str(remaining_budget)
+        msg = '\nRemaining Overall Budget is ' + getUserCurr(chat_id) + ' ' + str(remaining_budget)
     else:
-        msg = '\nBudget Exceded!\nExpenditure exceeds the budget by $' + str(remaining_budget)[1:]
+        msg = '\nBudget Exceded!\nExpenditure exceeds the budget by ' + getUserCurr(chat_id)+ ' ' + str(remaining_budget)[1:]
     bot.send_message(chat_id, msg)
 
 
@@ -293,9 +293,9 @@ def display_remaining_category_budget(message, bot, cat):
     chat_id = message.chat.id
     remaining_budget = calculateRemainingCategoryBudget(chat_id, cat)
     if remaining_budget >= 0:
-        msg = '\nRemaining Budget for ' + cat + ' is $' + str(remaining_budget)
+        msg = '\nRemaining Budget for ' + cat + ' is ' + getUserCurr(chat_id)+ ' ' + str(remaining_budget)
     else:
-        msg = '\nBudget for ' + cat + ' Exceded!\nExpenditure exceeds the budget by $' + str(abs(remaining_budget))
+        msg = '\nBudget for ' + cat + ' Exceded!\nExpenditure exceeds the budget by ' + getUserCurr(chat_id)+ ' ' + str(abs(remaining_budget))
     bot.send_message(chat_id, msg)
 
 

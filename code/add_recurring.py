@@ -136,7 +136,7 @@ def post_duration_input(message, bot, selected_category, amount_value):
                 helper.write_json(add_user_record(chat_id, "{},{},{}".format(date_str, category_str, amount_str)))
             
             # Inform the user that the expense has been recorded
-            bot.send_message(chat_id, 'The following expenditure has been recorded: You have spent ${} for {} for the next {} months'.format(amount_str, category_str, duration_value))
+            bot.send_message(chat_id, 'The following expenditure has been recorded: You have spent '+ helper.getUserCurr(chat_id) +' {} for {} for the next {} months'.format(amount_str, category_str, duration_value))
         else :
             text_intro = "Cancelled the operation.\nSelect "
 
