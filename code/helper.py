@@ -33,6 +33,7 @@ budget_types = {
 }
 
 data_format = {
+    'curr_type': 'USD',
     'data': [],
     'income': None,
     'budget': {
@@ -126,7 +127,7 @@ def getCurrencyType():
 
 def setCurrencyRates():
     API_KEY = '1932e67af6cdd38f9a1df48dbed973e1'
-    url = str.__add__('http://data.fixer.io/api/latest?access_key=', API_KEY)
+    url = 'http://data.fixer.io/api/latest?access_key=' + API_KEY
     global currency_rates
     data = requests.get(url).json()
     # Extracting only the rates from the json data
@@ -134,10 +135,11 @@ def setCurrencyRates():
 
 
 def convertCurrency(fromCurrency, toCurrency, amount):
+    amount = float(amount)
     if fromCurrency != 'EUR':
         amount = amount / currency_rates[fromCurrency]
     amount = round(amount * currency_rates[toCurrency], 2)
-    return amount
+    return str(amount)
 
 
 def validate_entered_amount(amount_entered):
