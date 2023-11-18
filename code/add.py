@@ -17,14 +17,18 @@ callback_data = CallbackData("calendar", "action", "year", "month", "day")
 
 def run(message, bot):
     # Read spending data from a JSON file
-
+    print("Inside run function!!!!!!!!!!!!")
     chat_id = message.chat.id
-    
+    option[chat_id] = {'original_message': message}
+    print(message)
+    print("The original message stored for chat_id", option[chat_id])
+
 
     # Check if a date has already been selected
     if chat_id in option and 'date' in option[chat_id]:
         # If a date is selected, move to category selection
         display_categories(message, bot)
+        print("date already stored")
     else:
         # If no date is selected, show the calendar
         helper.read_json()
@@ -47,7 +51,7 @@ def run(message, bot):
 
 def display_categories(message, bot):
     # Logic to display categories
-
+    print("Inside display categories")
     # Create a keyboard markup with spending categories for user selection
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
     markup.row_width = 2
@@ -68,7 +72,14 @@ def calendar_handler(call: CallbackQuery):
     print("inside calendar)handler")
     chat_id = call.message.chat.id
     
-    
+    # Retrieve the original message
+    print("retrieving the original message")
+    original_message = option.get(chat_id, {}).get('original_message')
+
+    if not original_message:
+        print("Original message not found for chat_id:", chat_id)
+        # Handle the case where original_message is not found
+        return
 
     name, action, year, month, day = call.data.split(callback_data.sep)
     # Processing the calendar. Get either the date or None if the buttons are of a different type
@@ -85,7 +96,8 @@ def calendar_handler(call: CallbackQuery):
             reply_markup=ReplyKeyboardRemove(),
         )
         print(f"{callback_data}: Day: {date.strftime('%d.%m.%Y')}")
-        bot.register_next_step_handler(call.message, run, bot)
+        call.message.text = '/run'  # Or any relevant text
+        display_categories(original_message, bot)
     elif action == "CANCEL":
         bot.send_message(
             chat_id=call.from_user.id,
@@ -140,7 +152,7 @@ def post_amount_input(message, bot, selected_category):
     try:
         chat_id = message.chat.id
         amount_entered = message.text
-
+        print("post_amount_input date recived", option[chat_id])
         # Check if the user canceled the operation
         if amount_entered != "Cancel":
             # Validate and convert the entered amount to a numeric value
