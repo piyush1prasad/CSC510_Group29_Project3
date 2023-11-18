@@ -19,6 +19,7 @@ import summary
 from datetime import datetime
 from jproperties import Properties
 
+
 # Load configuration from user.properties
 configs = Properties()
 
@@ -165,3 +166,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
