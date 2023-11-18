@@ -10,7 +10,8 @@ from code import bot
 import json
 
 option = {} # A dictionary for storing temporary user options
-
+dates = {}
+messages = {}
 # Initialize the calendar with English language
 calendar = Calendar()
 callback_data = CallbackData("calendar", "action", "year", "month", "day")
@@ -19,9 +20,9 @@ def run(message, bot):
     # Read spending data from a JSON file
     print("Inside run function!!!!!!!!!!!!")
     chat_id = message.chat.id
-    option[chat_id] = {'original_message': message}
+    messages[chat_id] = {'original_message': message}
     print(message)
-    print("The original message stored for chat_id", option[chat_id])
+    print("The original message stored for chat_id", messages[chat_id])
 
 
     # Check if a date has already been selected
@@ -74,7 +75,7 @@ def calendar_handler(call: CallbackQuery):
     
     # Retrieve the original message
     print("retrieving the original message")
-    original_message = option.get(chat_id, {}).get('original_message')
+    original_message = messages.get(chat_id, {}).get('original_message')
 
     if not original_message:
         print("Original message not found for chat_id:", chat_id)
@@ -88,8 +89,8 @@ def calendar_handler(call: CallbackQuery):
     )
     
     if action == "DAY":
-        option[chat_id] = {'date': date}
-        print("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", option[chat_id])
+        dates[chat_id] = {'date': date}
+        print("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", dates[chat_id])
         bot.send_message(
             chat_id=call.from_user.id,
             text=f"You have chosen {date.strftime('%d.%m.%Y')}",
@@ -163,7 +164,7 @@ def post_amount_input(message, bot, selected_category):
                 raise Exception("Spent amount has to be a non-zero number.")
 
             # Get the current date and time for the entry
-            date_of_entry = option[chat_id]['date'].strftime(helper.getDateFormat() + ' ' + helper.getTimeFormat())
+            date_of_entry = dates[chat_id]['date'].strftime(helper.getDateFormat() + ' ' + helper.getTimeFormat())
             date_str, category_str, amount_str = str(date_of_entry), str(option[chat_id]), str(amount_value)
             
             # Add the user's expenditure record to the JSON data
