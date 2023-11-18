@@ -32,7 +32,7 @@ def post_operation_selection(message, bot):
             if (helper.isTotalIncomeAvailable(chat_id)):
                 chat_id = message.chat.id
                 currentIncome = helper.getTotalIncome(chat_id)
-                msg_string = 'Current income is ${}\n\nEnter your new monthly income(Enter numeric values only) or enter Cancel to cancel the operation'
+                msg_string = 'Current income is '+ helper.getUserCurr(chat_id) + ' {}\n\nEnter your new monthly income(Enter numeric values only) or enter Cancel to cancel the operation'
                 message = bot.send_message(chat_id, msg_string.format(currentIncome))
             else:
                 message = bot.send_message(chat_id, 'Enter your monthly income(Enter numeric values only) or enter Cancel to cancel the operation')
@@ -93,7 +93,7 @@ def post_overall_amount_input(message, bot):
 def display_income(message, bot):
     chat_id = message.chat.id
     data = helper.getTotalIncome(chat_id)
-    bot.send_message(chat_id, 'Total Income: $' + data)
+    bot.send_message(chat_id, 'Total Income: ' + helper.getUserCurr(chat_id) + ' ' + data)
 
 
 def delete_income(message, bot):

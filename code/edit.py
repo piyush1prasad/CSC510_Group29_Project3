@@ -24,7 +24,7 @@ def run(m, bot):
             expense_data = c.split(',')
             str_date = "Date=" + expense_data[0]
             str_category = ",\t\tCategory=" + expense_data[1]
-            str_amount = ",\t\tAmount=$" + expense_data[2]
+            str_amount = ",\t\tAmount=" + helper.getUserCurr(chat_id) + ' ' + expense_data[2]
             markup.add(str_date + str_category + str_amount)
         markup.add('Cancel')
         info = bot.reply_to(m, "Select expense to be edited or select Cancel to cancel the operation:", reply_markup=markup)
@@ -159,7 +159,7 @@ def edit_cost(m, bot, selected_data):
                 selected_date = selected_data[0].split('=')[1]
                 selected_category = selected_data[1].split('=')[1]
                 selected_amount = selected_data[2].split('=')[1]
-                if user_data[0] == selected_date and user_data[1] == selected_category and user_data[2] == selected_amount[1:]:
+                if user_data[0] == selected_date and user_data[1] == selected_category and user_data[2] == selected_amount[4:]:
                     data_edit[i] = selected_date + ',' + selected_category + ',' + new_cost
                     break
             user_list[str(chat_id)]['data'] = data_edit

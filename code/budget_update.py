@@ -54,11 +54,12 @@ def post_type_selection(message, bot):
     except Exception as e:
         helper.throw_exception(e, message, bot, logging)
 
+
 # Function to update the overall budget
 def update_overall_budget(chat_id, bot):
     if (helper.isOverallBudgetAvailable(chat_id)):
         currentBudget = helper.getOverallBudget(chat_id)
-        msg_string = 'Current Budget is ${}\n\nEnter your new monthly budget (Enter numeric values only) or Enter Cancel to cancel the operation \n'
+        msg_string = 'Current Budget is ' + helper.getUserCurr(chat_id) + ' {}\n\nEnter your new monthly budget (Enter numeric values only) or Enter Cancel to cancel the operation \n'
         message = bot.send_message(chat_id, msg_string.format(currentBudget))
     else:
         message = bot.send_message(chat_id, 'Enter your monthly budget (Enter numeric values only)or Enter Cancel to cancel the operation \n')
@@ -76,7 +77,7 @@ def post_overall_amount_input(message, bot):
 
             if total_income is not None and float(amount_value) > float(total_income):
                 budget_deficit = float(amount_value) - float(total_income)
-                alert_message = f"⚠️\uFE0F Your budget exceeds your total income by ${budget_deficit:.2f} " + "\n(Do you want to update your budget)"
+                alert_message = f"⚠️\uFE0F Your budget exceeds your total income by "+ helper.getUserCurr(chat_id) + " {budget_deficit:.2f} " + "\n(Do you want to update your budget)"
     
                 # Define markup here before using it
                 markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
@@ -179,7 +180,7 @@ def post_category_amount_input(message, bot, category):
 
             if total_income is not None and total_sum > total_income:
                 budget_deficit = total_sum - total_income
-                alert_message = f"⚠️\uFE0F Your total budget exceeds your total income by ${budget_deficit:.2f} " + "\n(Do you want to update your budget)"
+                alert_message = f"⚠️\uFE0F Your total budget exceeds your total income by " + helper.getUserCurr(chat_id) + " {budget_deficit:.2f} " + "\n(Do you want to update your budget)"
     
                 # Define markup here before using it
                 markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
