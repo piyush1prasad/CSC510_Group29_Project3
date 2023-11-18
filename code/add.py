@@ -26,7 +26,7 @@ def run(message, bot):
 
 
     # Check if a date has already been selected
-    if chat_id in option and 'date' in option[chat_id]:
+    if chat_id in dates and 'date' in dates[chat_id]:
         # If a date is selected, move to category selection
         display_categories(message, bot)
         print("date already stored")
@@ -175,6 +175,8 @@ def post_amount_input(message, bot, selected_category):
             
             # Display the remaining budget for the selected category
             helper.display_remaining_budget(message, bot, selected_category)
+            dates.pop(chat_id, None)
+            messages.pop(chat_id, None)
         else :
 
             # Inform the user that the operation has been canceled
