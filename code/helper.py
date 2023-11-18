@@ -6,9 +6,9 @@ import requests
 from datetime import datetime
 
 choices = ['Date', 'Category', 'Cost']
-plot = ['Bar with budget', 'Pie','Bar without budget','Cancel']
+plot = ['Bar with budget', 'Pie','Bar without budget', 'Cancel']
 spend_display_option = ['Day', 'Month','Cancel']
-spend_estimate_option = ['Next day', 'Next month','Cancel']
+spend_estimate_option = ['Next day', 'Next month', 'Cancel']
 update_options = {
     'continue': 'Continue',
     'exit': 'Exit'
@@ -101,7 +101,9 @@ def write_json(user_list):
         print('Sorry, the data file could not be found.')
 
 
-def setCurrencyRates(url):
+def setCurrencyRates():
+    API_KEY = '1932e67af6cdd38f9a1df48dbed973e1'
+    url = str.__add__('http://data.fixer.io/api/latest?access_key=', API_KEY)
     global currency_rates
     data = requests.get(url).json()
     # Extracting only the rates from the json data
