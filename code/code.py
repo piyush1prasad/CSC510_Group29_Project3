@@ -17,6 +17,7 @@ import category
 import income
 import add_recurring
 import summary
+import currency_type
 from datetime import datetime
 from jproperties import Properties
 
@@ -82,6 +83,12 @@ def exit_command(m):
     return True
 
 
+# Handle the /curr_type command to set currency Type
+@bot.message_handler(commands=['curr_type'])
+def command_curr_type(message):
+    currency_type.run(message, bot)
+
+
 # Handle the /add command to add an expense
 @bot.message_handler(commands=['add'])
 def command_add(message):
@@ -126,25 +133,30 @@ def command_estimate(message):
 def command_delete(message):
     delete.run(message, bot)
 
+
 # Handle the /budget command
 @bot.message_handler(commands=['budget'])
 def command_budget(message):
     budget.run(message, bot)
+
 
 # Handle the /category command
 @bot.message_handler(commands=['category'])
 def command_category(message):
     category.run(message, bot)
     
+
 # Handle the /income command    
 @bot.message_handler(commands=['income'])
 def command_income(message):
     income.run(message, bot)
 
+
 # Handle the /summary command
 @bot.message_handler(commands=['summary'])
-def command_category(message):
+def command_summary(message):
     summary.run(message, bot)
+
 
 # Handle incoming messages that are not commands
 @bot.message_handler(content_types=['audio', 'photo', 'voice', 'video', 'document','text', 'location', 'contact', 'sticker'])
@@ -158,6 +170,7 @@ def default_command(message):
     bot.send_message(chat_id, text_intro)
     return True
     
+
 # Main function to start the bot
 def main():
     try:
@@ -169,5 +182,6 @@ def main():
 
 
 if __name__ == '__main__':
+    helper.setCurrencyRates()
     main()
     

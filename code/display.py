@@ -74,12 +74,12 @@ def display_total(message, bot):
                 queryResult = [value for index, value in enumerate(history) if str(query) in value]
 
             # Calculate total spending and store it in 'total_text'
-            total_text = calculate_spendings(queryResult)
+            total_text = calculate_spendings(queryResult, chat_id)
             total=total_text
             bud=budgetData
 
             # Generate a text representation of the total spending
-            spending_text = display_budget_by_text(history, budgetData)
+            spending_text = display_budget_by_text(history, budgetData, chat_id)
             if len(total_text) == 0:
                 spending_text += "----------------------\nYou have no spendings for {}!".format(DayWeekMonth)
                 bot.send_message(chat_id, spending_text)
@@ -143,7 +143,7 @@ def plot_total(message, bot):
     else:
           bot.send_message(chat_id, 'Invalid', reply_markup=types.ReplyKeyboardRemove())
           raise Exception("Sorry I don't recognise this plot type \"{}\"!".format(pyi))
-def calculate_spendings(queryResult):
+def calculate_spendings(queryResult, chat_id):
     total_dict = {}
 
     for row in queryResult:
@@ -159,18 +159,18 @@ def calculate_spendings(queryResult):
             total_dict[cat] = float(s[2])
     total_text = ""
     for key, value in total_dict.items():
-        total_text += str(key) + " $" + str(value) + "\n"
+        total_text += str(key) + " " + helper.getUserCurr(chat_id)+ ' ' + str(value) + "\n"
     print(total_text)
     return total_text
 
 
 
 
-def display_budget_by_text(history, budget_data) -> str:
+def display_budget_by_text(history, budget_data, chat_id) -> str:
     query = datetime.now().today().strftime(helper.getMonthFormat())
     # query all expense history that contains today's date
     queryResult = [value for index, value in enumerate(history) if str(query) in value]
-    total_text = calculate_spendings(queryResult)
+    total_text = calculate_spendings(queryResult, chat_id)
     budget_display = ""
     total_text_split = [line for line in total_text.split('\n') if line.strip() != '']
 
@@ -181,12 +181,12 @@ def display_budget_by_text(history, budget_data) -> str:
         # sum all expense
         for expense in total_text_split:
             a = expense.split(' ')
-            amount = a[1].replace("$", "")
+            amount = a[-1]
             total_expense += float(amount)
         # calculate the remaining budget
         remaining = budget_val - total_expense
         # set the return message
-        budget_display += "Overall Budget is: " + str(budget_val) + "\n----------------------\nCurrent remaining budget is " + str(
+        budget_display += "Overall Budget is: " + helper.getUserCurr(chat_id)+ ' ' + str(budget_val) + "\n----------------------\nCurrent remaining budget is " + helper.getUserCurr(chat_id)+ ' ' + str(
             remaining) + "\n"
     elif isinstance(budget_data, dict):
         budget_display += "Budget by Catergories is:\n"
@@ -199,7 +199,7 @@ def display_budget_by_text(history, budget_data) -> str:
         for i in total_text_split:
             # the expense text is in the format like "Food $100"
             a = i.split(' ')
-            a[1] = a[1].replace("$", "")
+            a[1] = a[-1]
             categ_remaining[a[0]] = categ_remaining[a[0]] - float(a[1]) if a[0] in categ_remaining else -float(a[1])
         budget_display += "----------------------\nCurrent remaining budget is: \n"
         # show the remaining budgets

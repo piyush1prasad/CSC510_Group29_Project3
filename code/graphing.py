@@ -21,7 +21,7 @@ def visualize(total_text, budgetData):
     # summarize the expense by categories
     for i in total_text_split:
         a = i.split(' ')
-        a[1] = a[1].replace("$", "")
+        a[1] = a[-1]
         categ_val[a[0]] = float(a[1])
 
     # Set categories as x-axis and expenditure amount as y-axis
@@ -75,7 +75,7 @@ def vis(total_text):
     categ_val = {}
     for i in total_text_split:
         a = i.split(' ')
-        a[1] = a[1].replace("$", "")
+        a[1] = a[-1]
         categ_val[a[0]] = float(a[1])
 
     x = list(categ_val.keys())
@@ -94,7 +94,7 @@ def viz(total_text):
     categ_val = {}
     for i in total_text_split:
         a = i.split(' ')
-        a[1] = a[1].replace("$", "")
+        a[1] = a[-1]
         categ_val[a[0]] = float(a[1])
 
     x = list(categ_val.keys())

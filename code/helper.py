@@ -2,12 +2,13 @@
 import re
 import json
 import os
+import requests
 from datetime import datetime
 
 choices = ['Date', 'Category', 'Cost']
-plot = ['Bar with budget', 'Pie','Bar without budget','Cancel']
+plot = ['Bar with budget', 'Pie','Bar without budget', 'Cancel']
 spend_display_option = ['Day', 'Month','Cancel']
-spend_estimate_option = ['Next day', 'Next month','Cancel']
+spend_estimate_option = ['Next day', 'Next month', 'Cancel']
 update_options = {
     'continue': 'Continue',
     'exit': 'Exit'
@@ -32,6 +33,7 @@ budget_types = {
 }
 
 data_format = {
+    'curr_type': 'USD',
     'data': [],
     'income': None,
     'budget': {
@@ -49,7 +51,8 @@ category_options = {
 
 # set of implemented commands and their description
 commands = {
-    'menu': 'Display this menu',    
+    'menu': 'Display this menu',
+    'curr_type': 'Chnage currency type',
     'income': 'Add/Update/View/Delete income',
     'add': 'Record/Add a new spending',
     'add_in_calendar': 'Record/Add a new spending on the calendar',
@@ -72,6 +75,28 @@ exit_commands = {
 dateFormat = '%d-%b-%Y'
 timeFormat = '%H:%M'
 monthFormat = '%b-%Y'
+
+# Currency rates
+user_currency_type = dict()
+currency_rates = dict()
+currency_types = [
+    'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN',
+    'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL',
+    'BSD', 'BTC', 'BTN', 'BWP', 'BYN', 'BYR', 'BZD', 'CAD', 'CDF', 'CHF',
+    'CLF', 'CLP', 'CNY', 'COP', 'CRC', 'CUC', 'CUP', 'CVE', 'CZK', 'DJF',
+    'DKK', 'DOP', 'DZD', 'EGP', 'ERN', 'ETB', 'EUR', 'FJD', 'FKP', 'GBP',
+    'GEL', 'GGP', 'GHS', 'GIP', 'GMD', 'GNF', 'GTQ', 'GYD', 'HKD', 'HNL',
+    'HRK', 'HTG', 'HUF', 'IDR', 'ILS', 'IMP', 'INR', 'IQD', 'IRR', 'ISK',
+    'JEP', 'JMD', 'JOD', 'JPY', 'KES', 'KGS', 'KHR', 'KMF', 'KPW', 'KRW',
+    'KWD', 'KYD', 'KZT', 'LAK', 'LBP', 'LKR', 'LRD', 'LSL', 'LTL', 'LVL',
+    'LYD', 'MAD', 'MDL', 'MGA', 'MKD', 'MMK', 'MNT', 'MOP', 'MRO', 'MUR',
+    'MVR', 'MWK', 'MXN', 'MYR', 'MZN', 'NAD', 'NGN', 'NIO', 'NOK', 'NPR',
+    'NZD', 'OMR', 'PAB', 'PEN', 'PGK', 'PHP', 'PKR', 'PLN', 'PYG', 'QAR',
+    'RON', 'RSD', 'RUB', 'RWF', 'SAR', 'SBD', 'SCR', 'SDG', 'SEK', 'SGD',
+    'SHP', 'SLE', 'SLL', 'SOS', 'SRD', 'STD', 'SYP', 'SZL', 'THB', 'TJS',
+    'TMT', 'TND', 'TOP', 'TRY', 'TTD', 'TWD', 'TZS', 'UAH', 'UGX', 'USD',
+    'UYU', 'UZS', 'VEF', 'VES', 'VND', 'VUV', 'WST', 'XAF', 'XAG', 'XAU',
+    'XCD', 'XDR', 'XOF', 'XPF', 'YER', 'ZAR', 'ZMK', 'ZMW', 'ZWL']
 
 
 # function to load .json expense record data
@@ -96,6 +121,39 @@ def write_json(user_list):
             json.dump(user_list, json_file, ensure_ascii=False, indent=4)
     except FileNotFoundError:
         print('Sorry, the data file could not be found.')
+
+
+def setUserCurr(chat_id):
+    user_list = read_json()
+    user_currency_type[str(chat_id)] = user_list[str(chat_id)]['curr_type']
+
+
+def getUserCurr(chat_id):
+    if str(chat_id) not in user_currency_type.keys():
+        user_list = read_json()
+        user_currency_type[str(chat_id)] = user_list[str(chat_id)]['curr_type']
+    return user_currency_type[str(chat_id)]
+
+
+def getCurrencyType():
+    return currency_types
+
+
+def setCurrencyRates():
+    API_KEY = '1932e67af6cdd38f9a1df48dbed973e1'
+    url = 'http://data.fixer.io/api/latest?access_key=' + API_KEY
+    global currency_rates
+    data = requests.get(url).json()
+    # Extracting only the rates from the json data
+    currency_rates = data["rates"]
+
+
+def convertCurrency(fromCurrency, toCurrency, amount):
+    amount = float(amount)
+    if fromCurrency != 'EUR':
+        amount = amount / currency_rates[fromCurrency]
+    amount = round(amount * currency_rates[toCurrency], 2)
+    return str(amount)
 
 
 def validate_entered_amount(amount_entered):
@@ -149,6 +207,7 @@ def getOverallBudget(chatId):
         return None
     return data['budget']['overall']
 
+
 def getTotalIncome(chatId):
     data = getUserData(chatId)
     if data is None:
@@ -181,6 +240,7 @@ def isOverallBudgetAvailable(chatId):
 def isTotalIncomeAvailable(chatId):
     return getTotalIncome(chatId) is not None 
 
+
 def isCategoryBudgetAvailable(chatId):
     return getCategoryBudget(chatId) is not None
 
@@ -206,9 +266,9 @@ def display_remaining_overall_budget(message, bot):
     remaining_budget = calculateRemainingOverallBudget(chat_id)
     print("here", remaining_budget)
     if remaining_budget >= 0:
-        msg = '\nRemaining Overall Budget is $' + str(remaining_budget)
+        msg = '\nRemaining Overall Budget is ' + getUserCurr(chat_id) + ' ' + str(remaining_budget)
     else:
-        msg = '\nBudget Exceded!\nExpenditure exceeds the budget by $' + str(remaining_budget)[1:]
+        msg = '\nBudget Exceded!\nExpenditure exceeds the budget by ' + getUserCurr(chat_id)+ ' ' + str(remaining_budget)[1:]
     bot.send_message(chat_id, msg)
 
 
@@ -234,9 +294,9 @@ def display_remaining_category_budget(message, bot, cat):
     chat_id = message.chat.id
     remaining_budget = calculateRemainingCategoryBudget(chat_id, cat)
     if remaining_budget >= 0:
-        msg = '\nRemaining Budget for ' + cat + ' is $' + str(remaining_budget)
+        msg = '\nRemaining Budget for ' + cat + ' is ' + getUserCurr(chat_id)+ ' ' + str(remaining_budget)
     else:
-        msg = '\nBudget for ' + cat + ' Exceded!\nExpenditure exceeds the budget by $' + str(abs(remaining_budget))
+        msg = '\nBudget for ' + cat + ' Exceded!\nExpenditure exceeds the budget by ' + getUserCurr(chat_id)+ ' ' + str(abs(remaining_budget))
     bot.send_message(chat_id, msg)
 
 
@@ -264,8 +324,10 @@ def getSpendCategories():
         spend_categories = tf.read().split(',')
     return spend_categories
 
+
 def getplot():
     return plot
+
 
 def getSpendDisplayOptions():
     return spend_display_option
@@ -306,8 +368,10 @@ def getBudgetTypes():
 def getUpdateOptions():
     return update_options
 
+
 def getYesNoOptions():
     return yes_or_no
+
 
 def getCategoryOptions():
     return category_options

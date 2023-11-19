@@ -61,7 +61,7 @@ def estimate_total(message, bot):
              # Query all spending records
             queryResult = [value for index, value in enumerate(history)]
 
-            total_text = calculate_estimate(queryResult, days_to_estimate)
+            total_text = calculate_estimate(queryResult, days_to_estimate, chat_id)
 
             spending_text = ""
             if len(total_text) == 0:
@@ -86,7 +86,7 @@ def estimate_total(message, bot):
         bot.reply_to(message, str(e))
 
 
-def calculate_estimate(queryResult, days_to_estimate):
+def calculate_estimate(queryResult, days_to_estimate, chat_id):
     total_dict = {}
     days_data_available = {}
     for row in queryResult:
@@ -113,5 +113,5 @@ def calculate_estimate(queryResult, days_to_estimate):
 
         # Estimate the total spending for the selected period
         estimated_avg = round(daily_avg * days_to_estimate, 2)
-        total_text += str(key) + " $" + str(estimated_avg) + "\n"
+        total_text += str(key) + " " + helper.getUserCurr(chat_id)+ ' ' + str(estimated_avg) + "\n"
     return total_text
