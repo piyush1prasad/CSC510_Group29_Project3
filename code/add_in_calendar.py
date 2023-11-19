@@ -72,17 +72,17 @@ def calendar_handler(call: CallbackQuery):
     print("inside calendar handler")
     chat_id = call.message.chat.id
     
-    # Retrieve the original message
+    # We Retrieve the original message
     print("retrieving the original message")
     original_message = messages.get(chat_id, {}).get('original_message')
 
     if not original_message:
         print("Original message not found for chat_id:", chat_id)
-        # Handle the case where original_message is not found
+        #Handle the case where original_message is not found
         return
 
     name, action, year, month, day = call.data.split(callback_data.sep)
-    # Processing the calendar. Get either the date or None if the buttons are of a different type
+    #Processing the calendar. Get either the date or None if the buttons are of a different type
     date = calendar.calendar_query_handler(
         bot=bot, call=call, name=name, action=action, year=year, month=month, day=day
     )
