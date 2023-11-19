@@ -11,6 +11,7 @@ import display
 import estimate
 import delete
 import add
+import add_in_calendar
 import budget
 import category
 import income
@@ -19,6 +20,7 @@ import summary
 import currency_type
 from datetime import datetime
 from jproperties import Properties
+
 
 # Load configuration from user.properties
 configs = Properties()
@@ -92,6 +94,9 @@ def command_curr_type(message):
 def command_add(message):
     add.run(message, bot)
 
+@bot.message_handler(commands=['add_in_calendar'])
+def command_add_in_calendar(message):
+    add_in_calendar.run(message, bot)
 
 # Handle the /add_recurring command to add recurring expenses
 @bot.message_handler(commands=['add_recurring'])
@@ -179,3 +184,4 @@ def main():
 if __name__ == '__main__':
     helper.setCurrencyRates()
     main()
+    
