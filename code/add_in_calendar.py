@@ -170,7 +170,7 @@ def post_amount_input(message, bot, selected_category):
             helper.write_json(add_user_record(chat_id, "{},{},{}".format(date_str, category_str, amount_str)))
             
             # Inform the user that the expenditure has been recorded
-            bot.send_message(chat_id, 'The following expenditure has been recorded: You have spent ${} for {} on {}'.format(amount_str, category_str, date_str))
+            bot.send_message(chat_id, 'The following expenditure has been recorded: You have spent '+ helper.getUserCurr(chat_id) + ' {} for {} on {}'.format(amount_str, category_str, date_str))
             
             # Display the remaining budget for the selected category
             helper.display_remaining_budget(message, bot, selected_category)
