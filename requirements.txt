@@ -6,3 +6,4 @@ matplotlib
 coverage
 pytest-mock
 requests
+telebot_calendar
