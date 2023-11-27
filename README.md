@@ -1,8 +1,6 @@
 # 💰 TrackMyDollar V3.0 - Budget On The Go(BOTGo) 💰
 
-Link to delta of Phase 4 - [https://www.youtube.com/watch?v=oKYiTNTCPbo](https://www.youtube.com/watch?v=oKYiTNTCPbo)
 
-This video shows only the new features and enhancement of some older features. All the other features from phase 3 are working as it is.
 <hr>
 <p align="center">
 <a><img  height=420 width=550 
@@ -41,20 +39,13 @@ With simple commands, this bot allows you to:
 
 ## What's new? (From Phase 3 to Phase 4)
 
-- Manage Income:
-  User can add certain amount as income and can view/delete or update the same
-  
-- Alert messages:
-  The Bot alerts the user with a warning message when either the given budget exceeds the income(both overall and categorical budget) or the expense crosses the budget.
-  
-- Summary report:
-  A PDF report is generated that consists of the summarised expenses done till date.
-  
-- Cancelling an Operation:
-  A cancel option is provided at every stage of all the operations provided in the menu.
-   
-- Exit Option:
-  An exit option is provided to stop the prompt messages from the BOT.
+-Add to Calendar:
+This functionality lets uusers add an expense to any date from the Calendar.
+In the older version of this software, the expense would get added by default to the current date.
+
+-Currency Type:
+This feature lets user record their expenses in a variety of currencies. 
+In the older version, the expense could only be recorded in USD.
 
 ## What more can be done?
 Please refer to the issue list available [here](https://github.com/prithvish-doshi-17/MyDollarBot-BOTGo/issues) to see what more can be done to make MyDollarBot better. Please refer to the MyDollarBot project present [here](https://github.com/prithvish-doshi-17/MyDollarBot-BOTGo/projects) to have a look at the tasks to be done, tasks currently in progress and tasks already done.
@@ -130,6 +121,7 @@ You can download and install the Telegram desktop application for your system fr
 <p>Title:'Track My Dollar'</p>
 <p>Version: '4.1'</p>
 <p>Description: 'An easy to use Telegram Bot to track everyday expenses'</p>
+<p>Authors(Iteration 5):'Piyush, Raaj, Ameaza'</p>
 <p>Authors(Iteration 4):'Tulasi, Siddartha, Yogitha, Deepika'</p>
 <p>Authors(Iteration 3):'Vraj, Alex, Leo, Prithvish, Seeya'</p>
 <p>Authors(Iteration 2):'Athithya, Subramanian, Ashok, Zunaid, Rithik'</p>
