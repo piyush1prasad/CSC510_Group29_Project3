@@ -8,11 +8,11 @@ import graphing
 
 dummy_total_text_none = ""
 dummy_total_text_data = """Food USD 10.0
-Transport $50.0
-Shopping $148.0
-Miscellaneous $47.93
-Utilities $200.0
-Groceries $55.21\n"""
+Transport USD 50.0
+Shopping USD 148.0
+Miscellaneous USD 47.93
+Utilities USD 200.0
+Groceries USD 55.21\n"""
 dummy_budget = "100.0"
 
 dummy_x = ['Food', 'Transport', 'Shopping', 'Miscellaneous', 'Utilities', 'Groceries']
