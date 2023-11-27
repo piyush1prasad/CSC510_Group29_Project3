@@ -42,6 +42,8 @@ def post_category_selection(message, bot):
         print(selected_category)
         if selected_category != "Cancel":
             user_list = helper.read_json()
+            if chat_id not in user_list.keys():
+                user_list[str(chat_id)] = helper.createNewUserRecord()
             fromCurrency = user_list[str(chat_id)]['curr_type']
             if selected_category != fromCurrency:
                 user_list[str(chat_id)]['curr_type'] = selected_category
