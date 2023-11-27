@@ -7,7 +7,7 @@ sys.path.append("code")
 import graphing
 
 dummy_total_text_none = ""
-dummy_total_text_data = """Food $10.0
+dummy_total_text_data = """Food USD 10.0
 Transport $50.0
 Shopping $148.0
 Miscellaneous $47.93
