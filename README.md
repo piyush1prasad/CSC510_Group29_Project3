@@ -62,7 +62,7 @@ Please refer to the issue list available [here](https://github.com/prithvish-dos
 
 ## Demo
 
-https://github.com/21Tulasi/MyDollarBot-newPhase/assets/68286340/26492210-eed5-4022-8a4e-cd5f2bee8d9c
+[![Watch the video](https://img.youtube.com/vi/O44Spomhkbs/maxresdefault.jpg)](https://youtu.be/O44Spomhkbs)
 
 
 ## Installation guide
