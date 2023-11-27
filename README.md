@@ -35,6 +35,8 @@ With simple commands, this bot allows you to:
 - Summary report of all expenses done till date
 - Clear/Erase all your records
 - Edit/Change any spending details if you wish to
+- Add expense to any date on the calendar
+- Add expense in any currency 
 
 
 ## What's new? (From Phase 3 to Phase 4)
