@@ -46,8 +46,6 @@ jobs:
         # Install pytest (you can use some other testing utility)
       - name: Install mock
         run: pip install mock
-      - name: Install pyautogui
-        run: pip install pyautogui
       - name: Install coverage
         run: pip install coverage
 
