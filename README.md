@@ -57,6 +57,10 @@ Please refer to the issue list available [here](https://github.com/prithvish-dos
 
 [![Watch the video](https://img.youtube.com/vi/O44Spomhkbs/maxresdefault.jpg)](https://youtu.be/O44Spomhkbs)
 
+## Score Cards
+
+[Here](https://docs.google.com/spreadsheets/d/1wuk8p1hj38N9aig3g4C0a22Q8zBikaV-VdsxiQKQrfA/edit?usp=sharing) are the scorecards
+
 
 ## Installation guide
 
