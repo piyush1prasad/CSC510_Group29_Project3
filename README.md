@@ -135,6 +135,8 @@ coverage report
 ## Notes:
 You can download and install the Telegram desktop application for your system from the following site: https://desktop.telegram.org/
 
+## Chat with us
+Join our [Discord](https://discord.gg/Vw46v5Av)
 
 <hr>
 <p>Title:'Track My Dollar'</p>
