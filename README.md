@@ -94,17 +94,19 @@ A successful run will generate a message on your terminal that says "TeleBot: St
 
 ## Walktrough 
 Add in Calendar: 
-Steps: 1. Enter /menu
-       2. Enter /add_in_calendar OR Press on /add_in_calendar in the menu
-       3. Click on the date of your choice
-       4.Select from the Category of expenses
-       5.Enter the ammount and click enter! You will get a confirmation message
+Steps: 
+1. Enter /menu
+2. Enter /add_in_calendar OR Press on /add_in_calendar in the menu
+3. Click on the date of your choice
+4. Select from the Category of expenses
+5. Enter the ammount and click enter! You will get a confirmation message
 
 Changing Currency Type:
-Steps: 1. Enter /menu 
-       2. Select /curr_type from the menu or type /curr_type
-       3. Select from the variety of options available
-       4. You will get a confirmation message.
+Steps:
+1. Enter /menu 
+2. Select /curr_type from the menu or type /curr_type
+3. Select from the variety of options available
+4. You will get a confirmation message.
 
 ## Testing
 
